@@ -1,0 +1,101 @@
+.footer {
+  background-color: #120326;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer-title span {
+  color: #6e00ff;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-icons a img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  transition: transform 0.3s;
+}
+.footer-icons a img:hover {
+  transform: scale(1.1);
+}
+
+.footer h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer ul li {
+  margin-bottom: 8px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.footer ul li a:hover {
+  color: #6e00ff;
+}
+
+.subscribe {
+  color: #6e00ff;
+  font-weight: 600;
+}
+
+.subscribe-box {
+  display: flex;
+  margin-top: 10px;
+  gap: 6px;
+}
+.subscribe-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+.subscribe-box button {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.subscribe-box button:hover {
+  background-color: #00a844;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #bbb;
+  margin-top: 30px;
+}

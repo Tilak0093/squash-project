@@ -1,0 +1,83 @@
+/* Purple Accent */
+.text-purple {
+  color: #6E00FF;
+}
+
+.border-purple {
+  border-color: #6E00FF !important;
+}
+
+/* Cards */
+.about-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ------------------ RIGHT COLUMN ------------------ */
+.about-images {
+  position: relative; /* for circles & badge */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Main Top Image */
+.main-image img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  min-height: 40rem;
+}
+
+.main-image {
+   
+}
+
+/* Sub-images row */
+.sub-images {
+  gap: 15px;
+}
+.sub-images img {
+  flex: 1;
+  border-radius: 0 0 20px 20px;
+  object-fit: cover;
+}
+
+/* Badge Overlay */
+.about-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #6E00FF;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(110, 0, 255, 0.4);
+}
+
+/* Decorative Circles */
+.circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.circle1 {
+  top: 10%;
+  right: -25px;
+}
+
+.circle2 {
+  bottom: -25px;
+  left: 20%;
+}

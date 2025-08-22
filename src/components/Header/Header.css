@@ -1,0 +1,136 @@
+.propertypro-header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-nav {
+  gap: 1.5rem;
+}
+
+.nav-link {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333 !important;
+  padding: 0.5rem 0 !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.home-link {
+  color: #6E00FF !important;
+}
+
+.nav-link:hover {
+  color: #6E00FF !important;
+}
+
+.get-started-btn {
+  background-color: #00B753 !important;
+  color: white !important;
+  border: none;
+  width: 142px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 12px 25px !important;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #009944 !important;
+}
+
+/* Mobile Styles - Improved for better toggle experience */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-nav {
+    gap: 0;
+    margin-bottom: 1rem !important;
+    text-align: center;
+  }
+  
+  .nav-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+    display: block;
+    width: 100%;
+  }
+  
+  .get-started-btn {
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    background: transparent;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+    outline: 2px solid #6E00FF;
+    outline-offset: 2px;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+/* Animation for smooth collapse */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Better focus styles for accessibility */
+.nav-link:focus,
+.get-started-btn:focus {
+  outline: 2px solid #6E00FF;
+  outline-offset: 2px;
+}
+
+/* Active state for mobile */
+@media (max-width: 992px) {
+  .nav-link.active {
+    background-color: rgba(110, 0, 255, 0.1);
+    border-radius: 4px;
+  }
+}
