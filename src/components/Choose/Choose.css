@@ -1,0 +1,72 @@
+/* Section styling */
+.choose-section {
+  background-color: #f9f9f9;
+}
+
+.choose-subtitle {
+  color: #6e00ff; /* Bootstrap green */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.choose-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Card general styling */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Image sizes - Bigger */
+.choose-img-top {
+  max-width: 140px; /* increased from 90px */
+  height: auto;
+}
+
+.choose-img-side {
+  max-width: 160px; /* increased from 100px */
+  height: auto;
+}
+
+.card-img-top {
+  max-width: 140px; /* increased from 100px */
+  margin: 0 auto;
+  display: block;
+}
+
+/* Buttons */
+.btn-success {
+  border-radius: 25px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+  background-color: #157347; /* darker green */
+  transform: scale(1.05);
+}
