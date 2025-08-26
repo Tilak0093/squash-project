@@ -39,8 +39,8 @@ export default function Latest() {
     <div className="container my-5 latest-section">
       {/* Section Title */}
       <div className="text-center mb-5">
-        <h6 className="latest-subtitle">| Latest Properties |</h6>
-        <h2 className="latest-title">Discover our handpicked selection of top listings</h2>
+        <h6 className="latest-subtitle">| LATEST PROPERTY |</h6>
+        <h2 className="latest-title">Properties for sale in your favorite area</h2>
       </div>
 
       {/* Property Cards */}

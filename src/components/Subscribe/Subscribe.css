@@ -1,0 +1,53 @@
+/* Wrapper to center and control width */
+.subscribe-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-card {
+  background-color: #e9d4f7 !important; /* light purple */
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  max-width: 900px;   /* 👈 smaller card */
+  width: 100%;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #6e00ff; /* purple heading */
+}
+
+.subscribe-input {
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.subscribe-btn {
+  border-radius: 0 10px 10px 0;
+  padding: 10px 20px;
+}
+
+.subscribe-img {
+  max-height: 180px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .subscribe-card {
+    text-align: center;
+  }
+
+  .subscribe-input {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-btn {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
