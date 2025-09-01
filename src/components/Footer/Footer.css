@@ -2,6 +2,7 @@
   background-color: #120326;
   color: white;
   padding: 50px 0;
+  overflow-x: hidden; /* Prevents horizontal scrollbar */
 }
 
 .footer-logo {
@@ -41,21 +42,21 @@
   font-size: 16px;
 }
 
-.footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Bullet points restored */
+.footer-list {
+  list-style: disc;
+  padding-left: 10px;
 }
-.footer ul li {
+.footer-list li {
   margin-bottom: 8px;
 }
-.footer ul li a {
+.footer-list li a {
   text-decoration: none;
   color: white;
   font-size: 14px;
   transition: color 0.3s;
 }
-.footer ul li a:hover {
+.footer-list li a:hover {
   color: #6e00ff;
 }
 
@@ -81,7 +82,7 @@
   background-color: #00c853;
   color: white;
   border: none;
-  padding: 0 15px;
+  padding:0 15px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
@@ -98,4 +99,26 @@
   font-size: 13px;
   color: #bbb;
   margin-top: 30px;
+}
+
+/* Make Page & Quick Links evenly spaced */
+@media (min-width: 992px) {
+  .footer .col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.66%; /* Force equal width for Contact, Page, Quick Links */
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .footer-list {
+    padding-left: 18px;
+  }
+  .subscribe-box {
+    flex-direction: column;
+  }
+  .subscribe-box button {
+    width: 100%;
+    margin-top: 8px;
+  }
 }

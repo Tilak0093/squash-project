@@ -4,7 +4,7 @@
 }
 
 .choose-subtitle {
-  color: #6e00ff; /* Bootstrap green */
+  color: #6e00ff;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -15,7 +15,7 @@
   color: #333;
 }
 
-/* Card general styling */
+/* Card styling */
 .card {
   border: none;
   border-radius: 15px;
@@ -28,33 +28,27 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card-title {
+.choose-card-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: #222;
 }
 
-.card-text {
+.choose-card-text {
   font-size: 1rem;
   color: #666;
   line-height: 1.5;
 }
 
-/* Image sizes - Bigger */
+/* Images */
 .choose-img-top {
-  max-width: 140px; /* increased from 90px */
-  height: auto;
+  max-width: 120px;
+  height: 80px;
 }
 
 .choose-img-side {
-  max-width: 160px; /* increased from 100px */
+  max-width: 180px;
   height: auto;
-}
-
-.card-img-top {
-  max-width: 140px; /* increased from 100px */
-  margin: 0 auto;
-  display: block;
 }
 
 /* Buttons */
@@ -67,6 +61,14 @@
 }
 
 .btn-success:hover {
-  background-color: #157347; /* darker green */
+  background-color: #157347;
   transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .choose-img-top,
+  .choose-img-side {
+    max-width: 100px;
+  }
 }

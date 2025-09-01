@@ -3,6 +3,7 @@ import "./About.css";
 import House1 from "../../assets/House1.png";
 import House2 from "../../assets/House2.png";
 import House3 from "../../assets/House3.png";
+import Center1 from "../../assets/Center1.png"; // icon for badge
 import Circle1 from "../../assets/circle1.png";
 import Circle2 from "../../assets/circle2.png";
 
@@ -41,25 +42,27 @@ const About = () => {
         </div>
 
         {/* Right Column (Images + Circles) */}
-        <div className="col-lg-6 about-images">
-          <div className="d-flex">
-          <div className="main-image">
-            <img src={House1} alt="estate" className="img-fluid shadow" />
+        <div className="col-lg-5 about-images d-flex">
+          
+          {/* Main Large Image */}
+          <div className="main-image position-relative">
+            <img src={House1} alt="estate" className="img-fluid" />
+            {/* Round Badge */}
             <div className="about-badge">
-              <span>Since 2024 - Sky Estate</span>
+              <img src={Center1} alt="icon" className="icon-img"/>
             </div>
           </div>
 
-          <div className="sub-images">
-            <img src={House2} alt="room" className="img-fluid shadow" />
-            <img src={House3} alt="living room" className="img-fluid shadow" />
+          {/* Two Stacked Smaller Images */}
+          <div className="sub-images d-flex flex-column">
+            <img src={House2} alt="room" className="img-fluid" />
+            <img src={House3} alt="living room" className="img-fluid" />
           </div>
-          </div>
+
           {/* Decorative Circles */}
           <img src={Circle1} alt="circle" className="circle circle1" />
           <img src={Circle2} alt="circle" className="circle circle2" />
         </div>
-
       </div>
     </section>
   );

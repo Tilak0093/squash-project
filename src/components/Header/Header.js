@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="propertypro-header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white p-0">
         <div className="container">
           {/* Logo */}
           <a className="navbar-brand" href="/">

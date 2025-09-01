@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Footer.css";
 import logo from "../../assets/logo.png";
 import facebook from "../../assets/facebook.png";
@@ -6,17 +6,11 @@ import twitter from "../../assets/twitter.png";
 import insta from "../../assets/insta.png";
 import linked from "../../assets/linked.png";
 
-
 const Footer = () => {
-  useEffect(() => {
-    // Example: Add icons/text dynamically using before() and after()
-    const footerTitle = document.querySelector(".footer-title");
-  }, []);
-
   return (
     <footer className="footer">
       <div className="container">
-        <div className="row gy-4">
+        <div className="row gy-4 justify-content-between">
           {/* Logo + Description */}
           <div className="col-md-6 col-lg-3">
             <img src={logo} alt="Dreamzkape Logo" className="footer-logo" />
@@ -43,10 +37,10 @@ const Footer = () => {
             <p>6391 Elgin St. Celina, 10299</p>
           </div>
 
-          {/* Pages */}
+          {/* Page */}
           <div className="col-md-6 col-lg-2">
             <h4>Page</h4>
-            <ul>
+            <ul className="footer-list">
               <li><a href="#">About Us</a></li>
               <li><a href="#">Property</a></li>
               <li><a href="#">Blogs</a></li>
@@ -57,7 +51,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="col-md-6 col-lg-2">
             <h4>Quick Links</h4>
-            <ul>
+            <ul className="footer-list">
               <li><a href="#">Terms and Conditions</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">FAQs</a></li>

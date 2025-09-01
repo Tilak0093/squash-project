@@ -19,49 +19,67 @@
 
 /* ------------------ RIGHT COLUMN ------------------ */
 .about-images {
-  position: relative; /* for circles & badge */
+  position: relative;
+  display: flex;
+  gap: 0; /* No gap between images */
+}
+
+/* Main Image */
+.main-image {
+  position: relative;
+  flex: 2;
+}
+
+.main-image img {
+  height: 500.03px;
+  width: 388.02px;
+  top: 1079px;
+  left: 975px;
+  object-fit: cover;
+  border-radius: 30px ; 
+  display: block;
+}
+
+/* Sub Images stacked tightly */
+.sub-images {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-}
-
-/* Main Top Image */
-.main-image img {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-  min-height: 40rem;
-}
-
-.main-image {
-   
-}
-
-/* Sub-images row */
-.sub-images {
-  gap: 15px;
-}
-.sub-images img {
   flex: 1;
-  border-radius: 0 0 20px 20px;
-  object-fit: cover;
 }
 
-/* Badge Overlay */
+.sub-images img {
+  height: 277.01px;
+  width: 280.02px;
+  top: 1032.01px;
+  left: 1383.02px;
+  object-fit: cover;
+  display: block;
+  border-radius: 30px;
+}
+
+
+/* Round Badge Centered */
 .about-badge {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 95%;
   transform: translate(-50%, -50%);
-  background: #6E00FF;
   color: white;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 20px;
   border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
   text-align: center;
-  white-space: nowrap;
   box-shadow: 0 4px 12px rgba(110, 0, 255, 0.4);
+}
+
+.about-badge .icon-img {
+  width: 126px;
+  margin-bottom: 5px;
 }
 
 /* Decorative Circles */
@@ -75,9 +93,42 @@
 .circle1 {
   top: 10%;
   right: -25px;
+  width:190.06
 }
 
 .circle2 {
   bottom: -25px;
   left: 20%;
+}
+
+/* Large Tablets (<= 991px) */
+@media (max-width: 991px) {
+  .about-badge {
+    left: 90%;  /* shift badge slightly left */
+    width: 100px;
+    height: 100px;
+    font-size: 11px;
+  }
+}
+
+/* Tablets & Mobiles (<= 768px) */
+@media (max-width: 768px) {
+  .about-badge {
+    left: 80%;   /* move badge more inside */
+    width: 90px;
+    height: 90px;
+    font-size: 10px;
+  }
+}
+
+/* Small Mobiles (<= 576px) */
+@media (max-width: 576px) {
+  .about-badge {
+    top: 85%;    /* move lower */
+    left: 50%;   /* center horizontally */
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    font-size: 9px;
+  }
 }

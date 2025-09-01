@@ -47,26 +47,26 @@ const Blog = () => {
         {/* Blog Cards */}
         <div className="row justify-content-center mt-5">
           {blogData.map((blog, index) => (
-            <div className="col-md-4 mb-4" key={index}>
-              <div className="card blog-card h-100">
-                <div className="card-img position-relative">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>
+              <div className="blog-card h-100">
+                <div className="blog-card-img position-relative">
                   <img
                     src={blog.img}
-                    className="card-img-top"
+                    className="img-fluid rounded"
                     alt={blog.title}
                   />
                   {/* Date Tag */}
-                  <div className="date-tag">
+                  <div className="blog-date-tag">
                     <h5>{blog.date}</h5>
                     <p>{blog.day}</p>
                   </div>
                 </div>
-                <div className="card-body text-start">
-                  <p className="blog-meta">
+                <div className="blog-card-body text-start">
+                  <p className="blog-card-meta">
                     {blog.fullDate} | <span>{blog.category}</span>
                   </p>
-                  <h5 className="card-title">{blog.title}</h5>
-                  <p className="card-text">{blog.desc}</p>
+                  <h5 className="blog-card-title">{blog.title}</h5>
+                  <p className="blog-card-description">{blog.desc}</p>
                 </div>
               </div>
             </div>

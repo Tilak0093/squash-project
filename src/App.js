@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      <main className="main-content" style={{ paddingTop: '80px' }}>
+      <main className="main-content" >
         <MainContent />
         
       </main>

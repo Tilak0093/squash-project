@@ -25,69 +25,216 @@ import share from "../../assets/share.png";
 import heart from "../../assets/Heart.png";
 import plus from "../../assets/Plus.png";
 
-const properties = [
-  { img: house1, profile: jacobjones, name: "Jacob Jones" },
-  { img: house2, profile: diannerussel, name: "Dianne Russel" },
-  { img: house3, profile: robertfox, name: "Robert Fox" },
-  { img: house4, profile: jennywilson, name: "Jenny Wilson" },
-  { img: house5, profile: bessiecooper, name: "Bessie Cooper" },
-  { img: house6, profile: lesliealexander, name: "Leslie Alexander" },
-];
-
-export default function Latest() {
+const Latest = () => {
   return (
-    <div className="container my-5 latest-section">
-      {/* Section Title */}
-      <div className="text-center mb-5">
-        <h6 className="latest-subtitle">| LATEST PROPERTY |</h6>
-        <h2 className="latest-title">Properties for sale in your favorite area</h2>
-      </div>
+    <section className="latest-section py-5">
+      <div className="container">
+        {/* Section Heading */}
+        <p className="section-subtitle text-center">| LATEST PROPERTY |</p>
+        <h2 className="section-title text-center">
+          Properties for sale in your favorite area
+        </h2>
 
-      {/* Property Cards */}
-      <div className="row g-4">
-        {properties.map((prop, index) => (
-          <div key={index} className="col-md-4 col-sm-6">
+        {/* Row Start */}
+        <div className="row mt-5">
+
+          {/* Card 1 */}
+          <div className="col-md-4 mb-4">
             <div className="card latest-card h-100">
-              <img src={prop.img} className="card-img-top" alt="property" />
-              <div className="card-body d-flex flex-column justify-content-between">
-
-                {/* Top Section */}
-                <div>
-                  <h5 className="card-title">Beautiful Family House</h5>
-                  <p className="price mt-1">$4,500</p>
-                  <p className="card-text text-muted">Los Angeles, CA</p>
-
-                  <div className="d-flex justify-content-between text-center my-3">
-                    <div><img src={car} alt="car" className="icon" /> 2</div>
-                    <div><img src={bath} alt="bathroom" className="icon" /> 2</div>
-                    <div><img src={sqft} alt="sqft" className="icon" /> 1200 sqft</div>
-                  </div>
+              <div className="card-img position-relative">
+                <img src={house1} className="card-img-top" alt="Luxury villa" />
+                <span className="tag hot">Hot offer</span>
+                <span className="tag sale">Sale</span>
+              </div>
+              <div className="card-body text-start">
+                <h5 className="property-title">Luxury villa in Rego Park</h5>
+                <p className="property-price">$590,693</p>
+                <div className="property-details">
+                  <span><img src={car} alt="" /> 4</span>
+                  <span><img src={bath} alt="" /> 4</span>
+                  <span><img src={sqft} alt="" /> 2,096.00 ft</span>
                 </div>
-
-                {/* Bottom Section */}
-                <div className="d-flex justify-content-between align-items-center mt-3">
-                  <div className="d-flex align-items-center">
-                    <img src={prop.profile} className="profile-img" alt="owner" />
-                    <span className="ms-2">{prop.name}</span>
-                  </div>
-
-                  <div className="d-flex align-items-center gap-2">
-                    <img src={share} alt="share" className="action-icon" />
-                    <img src={heart} alt="heart" className="action-icon" />
-                    <img src={plus} alt="plus" className="action-icon" />
-                  </div>
+              </div>
+              <hr className="divider" />
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
+                <div className="d-flex align-items-center">
+                  <img src={jacobjones} alt="Jacob Jones" className="agent-img" />
+                  <span className="agent-name">Jacob Jones</span>
                 </div>
+                <div className="icons">
+                  <img src={share} alt="Share" />
+                  <img src={heart} alt="Heart" className="ms-2" />
+                  <img src={plus} alt="Plus" className="ms-2" />
+                </div>
+              </div>
+            </div>
+          </div>
 
-              </div> {/* card-body */}
-            </div> {/* card */}
-          </div> /* col */
-        ))}
-      </div>
+          {/* Card 2 */}
+          <div className="col-md-4 mb-4">
+            <div className="card latest-card h-100">
+              <div className="card-img position-relative">
+                <img src={house2} className="card-img-top" alt="Equestrian Home" />
+              </div>
+              <div className="card-body text-start">
+                <h5 className="property-title">Equestrian Family Home</h5>
+                <p className="property-price">$590,693</p>
+                <div className="property-details">
+                  <span><img src={car} alt="" /> 4</span>
+                  <span><img src={bath} alt="" /> 4</span>
+                  <span><img src={sqft} alt="" /> 2,096.00 ft</span>
+                </div>
+              </div>
+              <hr className="divider" />
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
+                <div className="d-flex align-items-center">
+                  <img src={diannerussel} alt="Dianne Russel" className="agent-img" />
+                  <span className="agent-name">Dianne Russel</span>
+                </div>
+                <div className="icons">
+                  <img src={share} alt="Share" />
+                  <img src={heart} alt="Heart" className="ms-2" />
+                  <img src={plus} alt="Plus" className="ms-2" />
+                </div>
+              </div>
+            </div>
+          </div>
 
-      {/* See All Button */}
-      <div className="text-center mt-5">
-        <button className="see-all-btn">See All Properties</button>
+          {/* Card 3 */}
+          <div className="col-md-4 mb-4">
+            <div className="card latest-card h-100">
+              <div className="card-img position-relative">
+                <img src={house3} className="card-img-top" alt="Equestrian Home" />
+                <span className="tag hot">Hot offer</span>
+                <span className="tag sale">Sale</span>
+              </div>
+              <div className="card-body text-start">
+                <h5 className="property-title">Equestrian Family Home</h5>
+                <p className="property-price">$590,693</p>
+                <div className="property-details">
+                  <span><img src={car} alt="" /> 4</span>
+                  <span><img src={bath} alt="" /> 4</span>
+                  <span><img src={sqft} alt="" /> 2,096.00 ft</span>
+                </div>
+              </div>
+              <hr className="divider" />
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
+                <div className="d-flex align-items-center">
+                  <img src={robertfox} alt="Robert Fox" className="agent-img" />
+                  <span className="agent-name">Robert Fox</span>
+                </div>
+                <div className="icons">
+                  <img src={share} alt="Share" />
+                  <img src={heart} alt="Heart" className="ms-2" />
+                  <img src={plus} alt="Plus" className="ms-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="col-md-4 mb-4">
+            <div className="card latest-card h-100">
+              <div className="card-img position-relative">
+                <img src={house4} className="card-img-top" alt="Luxury villa" />
+                <span className="tag hot">Hot offer</span>
+                <span className="tag sale">Sale</span>
+              </div>
+              <div className="card-body text-start">
+                <h5 className="property-title">Luxury villa in Rego Park</h5>
+                <p className="property-price">$590,693</p>
+                <div className="property-details">
+                  <span><img src={car} alt="" /> 4</span>
+                  <span><img src={bath} alt="" /> 4</span>
+                  <span><img src={sqft} alt="" /> 2,096.00 ft</span>
+                </div>
+              </div>
+              <hr className="divider" />
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
+                <div className="d-flex align-items-center">
+                  <img src={jennywilson} alt="Jenny Wilson" className="agent-img" />
+                  <span className="agent-name">Jenny Wilson</span>
+                </div>
+                <div className="icons">
+                  <img src={share} alt="Share" />
+                  <img src={heart} alt="Heart" className="ms-2" />
+                  <img src={plus} alt="Plus" className="ms-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 5 */}
+          <div className="col-md-4 mb-4">
+            <div className="card latest-card h-100">
+              <div className="card-img position-relative">
+                <img src={house5} className="card-img-top" alt="Equestrian Home" />
+                <span className="tag hot">Hot offer</span>
+                <span className="tag sale">Sale</span>
+              </div>
+              <div className="card-body text-start">
+                <h5 className="property-title">Equestrian Family Home</h5>
+                <p className="property-price">$590,693</p>
+                <div className="property-details">
+                  <span><img src={car} alt="" /> 4</span>
+                  <span><img src={bath} alt="" /> 4</span>
+                  <span><img src={sqft} alt="" /> 2,096.00 ft</span>
+                </div>
+              </div>
+              <hr className="divider" />
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
+                <div className="d-flex align-items-center">
+                  <img src={bessiecooper} alt="Bessie Cooper" className="agent-img" />
+                  <span className="agent-name">Bessie Cooper</span>
+                </div>
+                <div className="icons">
+                  <img src={share} alt="Share" />
+                  <img src={heart} alt="Heart" className="ms-2" />
+                  <img src={plus} alt="Plus" className="ms-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 6 */}
+          <div className="col-md-4 mb-4">
+            <div className="card latest-card h-100">
+              <div className="card-img position-relative">
+                <img src={house6} className="card-img-top" alt="Luxury villa" />
+              </div>
+              <div className="card-body text-start">
+                <h5 className="property-title">Luxury villa in Rego Park</h5>
+                <p className="property-price">$590,693</p>
+                <div className="property-details">
+                  <span><img src={car} alt="" /> 4</span>
+                  <span><img src={bath} alt="" /> 4</span>
+                  <span><img src={sqft} alt="" /> 2,096.00 ft</span>
+                </div>
+              </div>
+              <hr className="divider" />
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
+                <div className="d-flex align-items-center">
+                  <img src={lesliealexander} alt="Leslie Alexander" className="agent-img" />
+                  <span className="agent-name">Leslie Alexander</span>
+                </div>
+                <div className="icons">
+                  <img src={share} alt="Share" />
+                  <img src={heart} alt="Heart" className="ms-2" />
+                  <img src={plus} alt="Plus" className="ms-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Button */}
+        <div className="text-center mt-4">
+          <button className="btn see-all-btn">See All Properties</button>
+        </div>
       </div>
-    </div> /* container */
+    </section>
   );
-}
+};
+
+export default Latest;
