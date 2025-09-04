@@ -1,6 +1,6 @@
 .main-content {
   position: relative;
-  min-height: 100vh;
+  min-height: 85vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,11 +21,13 @@
   left: 630px;
   font-family: 'Rubik', sans-serif;
   font-style: bold;
-  font-size: 54px ;
+  font-size: 57px ;
   line-height: 64 px;
   letter-spacing: 0%;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-left: -5px;
+  margin-top: -60px;
+
 }
 
 .hero-subtitle {
@@ -36,21 +38,23 @@
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-style: regular;
-  font-size: 24px;
+  font-size: 16px;
   margin: 0 auto 20px auto;
   line-height: 26px;
   letter-spacing: 0%;
   color: #edeff6;
+  margin-top: 20px;
 }
 
 /* Bottom Wrapper (keeps toggle + search box together) */
 .bottom-wrapper {
   position: absolute;
-  bottom:-40px;
+  bottom: -45px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-  max-width: 1100px;
+  max-width: 100rem;
+  max-height: 50rem;
+  width: 100%;
 }
 
 /* Rent / Sale Buttons */
@@ -63,7 +67,6 @@
 .toggle-buttons button {
   border-radius: 6px;
   padding: 10px 25px;
-  font-weight: 600;
   margin: 0 5px;
   border: none;
   z-index: 2;
@@ -73,6 +76,20 @@
 .rent-btn {
   background-color: #6e00ff !important;
   color: #fff !important;
+  width: 106px;
+  min-height: 60px;
+  max-height: 60px;
+  top: 713px;
+  left: 851px;
+  border-radius: 5px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  
+
 }
 .rent-btn:hover {
   background-color: #5200c8 !important;
@@ -84,6 +101,17 @@
   background-color: #ffffff !important;
   border: 1px solid #ccc !important;
   color: #474747 !important;
+  min-height: 60px;
+  max-height: 60px;
+  top: 713px;
+  left: 969px;
+  border-radius: 5px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
 }
 .sale-btn:hover {
   background-color: #f5f5f5 !important;
@@ -97,16 +125,33 @@
   padding: 20px;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: semibold;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0%;
+
+
 }
 
 /* Search Button (Green) */
 .search-btn {
   background-color: #00b753 !important;
   color: #fff !important;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 12px 0;
   font-size: 16px;
   border: none;
+  max-width: 130px;
+  min-height: 61px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+
 }
 .search-btn:hover {
   background-color: #009e45 !important;
@@ -142,13 +187,18 @@
   border-bottom: 1px solid #ccc; /* subtle underline */
   color: #474747; /* text color visible */
   font-size: 14px;
-  padding: 10px;
   border-radius: 0; /* remove rounded corners */
   appearance: none; /* remove default browser arrow */
   -webkit-appearance: none;
   -moz-appearance: none;
   position: relative;
   z-index: 2;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
 }
 
 /* Keep arrow visible */

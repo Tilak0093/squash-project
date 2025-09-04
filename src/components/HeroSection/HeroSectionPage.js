@@ -27,7 +27,7 @@ const HeroSectionPage = () => {
         <div className="bottom-bar container shadow-lg rounded-3 p-3 bg-white">
           <div className="row g-3 align-items-center">
             {/* Locations */}
-            <div className="col-md-3 col-12 border-col">
+            <div className="col-md-3 col-12 border-col d-flex flex-column align-items-center">
               <label className="form-label fw-bold">Locations</label>
               <div className="select-wrapper">
                 <select className="form-select">
@@ -40,7 +40,7 @@ const HeroSectionPage = () => {
             </div>
 
             {/* Property Type */}
-            <div className="col-md-3 col-12 border-col">
+            <div className="col-md-3 col-12 border-col d-flex flex-column align-items-center">
               <label className="form-label fw-bold">Property Type</label>
               <div className="select-wrapper">
                 <select className="form-select">
@@ -53,7 +53,7 @@ const HeroSectionPage = () => {
             </div>
 
             {/* Rent Range */}
-           <div className="col-md-3 col-12 border-col">
+           <div className="col-md-3 col-12 border-col d-flex flex-column align-items-center">
             <label className="form-label fw-bold">Rent Range</label>
             <div className="select-wrapper">
               <select className="form-select">
@@ -66,7 +66,7 @@ const HeroSectionPage = () => {
           </div>
 
             {/* Search Button */}
-            <div className="col-md-3 col-12 d-flex align-items-end">
+            <div className="col-md-3 col-12 d-flex justify-content-center">
               <button className="search-btn w-100">Search</button>
             </div>
           </div>

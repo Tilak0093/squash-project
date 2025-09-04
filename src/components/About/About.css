@@ -1,3 +1,134 @@
+/* Title styling */
+.about-title {
+  font-size: 47px;         /* adjust size */
+  font-weight: 600;        /* bold */
+  color: #000000;             /* dark color */
+  margin-bottom: 1rem;
+  width: 685px;
+  height: 94px;
+  top: 1109px;
+  left: 260px;
+  font-family: 'Rubik', sans-serif;
+  font-style: semibold;
+  line-height: 54px;
+  letter-spacing: 0%;
+  margin-top: 30px;
+  margin-left: -25px;
+  
+}
+
+/* Subtitle styling */
+.about-subtitle {
+  font-size: 0.9rem;       /* smaller text */
+  font-weight: 600;        /* semi-bold */
+  text-transform: uppercase;
+  color: #6E00FF;          /* purple shade */
+  letter-spacing: 1px;
+  width: 162px;
+  min-height: 30px;
+  max-height: 30px;
+  top: 1059px;
+  left: 260px;
+  gap: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-top: 100px;
+  margin-left: -50px
+
+}
+
+/* Custom muted text */
+.about-text-muted {
+  color: #474747;   /* soft gray */
+  line-height: 26px;
+  margin-bottom: 1rem;
+  width: 685px;
+  min-height: 52px;
+  max-height: 52px;
+  top: 1233px;
+  left: 260px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 1rem;
+  letter-spacing: 0%;
+  margin-top: 25px;
+  margin-left: -40px;
+}
+
+
+/* Card Base */
+.about-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bbbbbb;
+  border-radius: 30px;
+  top: 1334px;
+  left: 260px;
+  width: 500px;
+  min-height: 126px;
+  max-height: 126px;
+  padding: 15px 20px;
+  background-color: #fff;
+  transition: 0.3s ease;
+  margin-top: 40px;
+  margin-left: -43px;
+}
+
+.about-card:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Icon */
+.about-card-icon {
+  width: 40.09px;
+  height: 39.68px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+/* Card Text Wrapper */
+.about-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Titles */
+.about-card-title-purple {
+  color: #6e00ff;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-bottom: 4px;
+}
+
+.about-card-title-dark {
+  color: #000000;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-bottom: 4px;
+}
+
+/* Card Description */
+.about-card-description {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0;
+}
+
+
 /* Purple Accent */
 .text-purple {
   color: #6E00FF;
@@ -7,21 +138,10 @@
   border-color: #6E00FF !important;
 }
 
-/* Cards */
-.about-card {
-  transition: all 0.3s ease-in-out;
-}
-
-.about-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-}
-
 /* ------------------ RIGHT COLUMN ------------------ */
 .about-images {
   position: relative;
   display: flex;
-  gap: 0; /* No gap between images */
 }
 
 /* Main Image */
@@ -30,14 +150,17 @@
   flex: 2;
 }
 
-.main-image img {
-  height: 500.03px;
-  width: 388.02px;
+.aboutimage1 {
+  max-height: 100% !important;
+  max-width: 388.02px !important;
   top: 1079px;
   left: 975px;
   object-fit: cover;
   border-radius: 30px ; 
   display: block;
+  position:absolute;
+  top: 90px;
+  left: 5px;
 }
 
 /* Sub Images stacked tightly */
@@ -45,6 +168,8 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  margin-top: 30px;
+  margin-right: -40px;
 }
 
 .sub-images img {
@@ -57,7 +182,16 @@
   border-radius: 30px;
 }
 
+.abouthouse2{
+  max-width: 310px;
+  max-height: 300px;
+}
 
+
+.abouthouse3{
+  max-width: 310px;
+  max-height: 300px;
+}
 /* Round Badge Centered */
 .about-badge {
   position: absolute;
@@ -78,8 +212,8 @@
 }
 
 .about-badge .icon-img {
-  width: 126px;
-  margin-bottom: 5px;
+  width: 220px;
+  margin-bottom: 50px;
 }
 
 /* Decorative Circles */
@@ -91,14 +225,14 @@
 }
 
 .circle1 {
-  top: 10%;
-  right: -25px;
+  top: 8%;
+  right: -100px;
   width:190.06
 }
 
 .circle2 {
-  bottom: -25px;
-  left: 20%;
+  bottom: -50px;
+  left: 360px;
 }
 
 /* Large Tablets (<= 991px) */
@@ -130,5 +264,12 @@
     width: 75px;
     height: 75px;
     font-size: 9px;
+  }
+}
+
+/* Custom container max-width override */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px !important;
   }
 }

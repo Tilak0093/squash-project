@@ -10,17 +10,37 @@ import Subscribe from "../Subscribe/Subscribe";
 const MainContent = () => {
   return (
     <div className="main-content">
-      <HeroSection />
-      <About/>
-      <Choose />
-      <Latest />
-      <Neighborhood />
-      <Team />
-      <Blog />
-      <Subscribe />
+        <HeroSection />
+        
+      <div className="container">
+        <About />
+      </div>
+
+      <div className="container">
+        <Choose />
+      </div>
+
+      <div className="container">
+        <Latest />
+      </div>
+
+      <div className="container">
+        <Neighborhood />
+      </div>
+
+      <div className="container">
+        <Team />
+      </div>
+
+      <div className="container">
+        <Blog />
+      </div>
+
+      <div className="container">
+        <Subscribe />
+      </div>
     </div>
   );
 };
-
 
 export default MainContent;

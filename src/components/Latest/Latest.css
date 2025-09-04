@@ -1,3 +1,17 @@
+.latest-subtitle {
+  color: #6e00ff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.latest-title {
+  font-weight: 700;
+  font-size: 28px;
+  color: #000;
+}
+
 .latest-card {
   border: none;
   border-radius: 12px;

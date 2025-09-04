@@ -30,8 +30,8 @@ const Latest = () => {
     <section className="latest-section py-5">
       <div className="container">
         {/* Section Heading */}
-        <p className="section-subtitle text-center">| LATEST PROPERTY |</p>
-        <h2 className="section-title text-center">
+        <p className="latest-subtitle text-center">| LATEST PROPERTY |</p>
+        <h2 className="latest-title text-center">
           Properties for sale in your favorite area
         </h2>
 
