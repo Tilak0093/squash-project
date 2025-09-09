@@ -7,7 +7,7 @@ import peterparker1 from "../../assets/peterparker1.png";
 import rosalinawilliam from "../../assets/rosalinawilliam.png";
 import instateam from "../../assets/instateam.png";
 import twitterteam from "../../assets/twitterteam.png";
-import facebookteam from "../../assets/facebookteam.png";
+import facebookteam from "../../assets/facebookteam.png"; 
 
 const Team = () => {
   const teamMembers = [

@@ -3,30 +3,69 @@
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  gap: 20px;
 }
 
 .latest-title {
-  font-weight: 700;
-  font-size: 28px;
-  color: #000;
+  color: #000000;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: semibold;
+  font-size: 47px;
+  line-height: 54px;
+  letter-spacing: 0%;
+  margin-top: 30px;
 }
 
+/* .card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+} */
+#latestID {
+  margin-top: 80px !important;
+}
 .latest-card {
   border: none;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
+  max-width: 447px !important;
+  max-height: 512px !important;
+  margin-top: 10px;
+  padding: 20px !important;
 }
 .latest-card:hover {
   transform: translateY(-5px);
 }
 
 .card-img img {
-  width: 447px;
-  height: 250px;
   object-fit: cover;
+}
+
+.latest-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.latest-card-body {
+  padding: 15px;
+  background-color: #f8f8f8;
+  position: relative;
+  text-align: center;
 }
 
 .tag {
@@ -36,23 +75,39 @@
   background: #6e00ff;
   color: #fff;
   padding: 4px 10px;
-  font-size: 12px;
+  font-size: 15px;
   border-radius: 6px;
   margin-right: 5px;
+  max-height: 34px;
+  max-width: 86.45px;
 }
 .tag.sale {
   background: #6e00ff;
-  left: 80px ;
+  left: 100px ;
+  max-height: 34px;
+  max-width: 54.82px;
 }
 
 .property-title {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  font-style: medium;
+  line-height: 34px;
+  letter-spacing: 0%;
+  color: #000000;
+  
 }
 .property-price {
-  color: #28a745;
-  font-weight: 700;
-  font-size: 18px;
+  color: #00b753;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-style: semibold;
+  line-height: 30px;
+  letter-spacing: 0%;
+
+
 }
 .property-details {
   display: flex;
@@ -63,7 +118,6 @@
   color: #666;
 }
 .property-details img {
-  width: 18px;
   margin-right: 5px;
 }
 .divider {
@@ -71,17 +125,23 @@
 }
 
 .agent-img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 8px;
 }
 .agent-name {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  font-style: regular;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #000000;
 }
 .icons img {
-  width: 18px;
+  width: 30.59px;
+  height: 30.59px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -90,12 +150,20 @@
 }
 
 .see-all-btn {
-  background: #28a745 !important;
-  color: #fff !important;
+  background: #00b753 !important;
+  width: 187px;
+  height: 50px;
+  color: #ffffff !important;
+  font-family: 'Rubik', sans-serif;
   padding: 10px 24px;
   border-radius: 8px;  /* ✅ rectangular with rounded edges */
-  font-weight: 600;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
   border: none;
+  margin-top: 20px;
 }
 .see-all-btn:hover {
   background: #218838;

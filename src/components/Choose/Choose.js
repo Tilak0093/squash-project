@@ -21,7 +21,7 @@ const Choose = () => {
         <div className="row g-4" id="chooseID" >
           {/* Card 1 */}
           <div className="col-lg-4 col-md-6">
-            <div className="card h-100 shadow-sm text-center">
+            <div className="choose-card h-100 shadow-sm text-center">
               <div className="p-3">
                 <img src={piggybank} className="choose-img-top" alt="Budget Friendly" />
               </div>
@@ -42,7 +42,7 @@ const Choose = () => {
 
           {/* Card 2 - horizontal */}
           <div className="col-lg-8 col-md-6">
-            <div className="card h-100 shadow-sm">
+            <div className="choose-card h-100 shadow-sm">
               <div className="row g-0 h-100 align-items-center">
                 <div className="col-md-7 d-flex align-items-center justify-content-center p-3">
                   <img src={house} className="choose-img-side" alt="Property Insurance" />
@@ -66,7 +66,7 @@ const Choose = () => {
 
           {/* Card 3 */}
           <div className="col-lg-4 col-md-6">
-            <div className="card h-100 shadow-sm text-center">
+            <div className="choose-card h-100 shadow-sm text-center">
               <div className="p-3">
                 <img src={hands} className="choose-img-top" alt="Trusted By Thousands" />
               </div>
@@ -86,7 +86,7 @@ const Choose = () => {
 
           {/* Card 4 */}
           <div className="col-lg-4 col-md-6">
-            <div className="card h-100 shadow-sm text-center">
+            <div className="choose-card h-100 shadow-sm text-center">
               <div className="p-3">
                 <img src={map} className="choose-img-top" alt="Prime Location" />
               </div>
@@ -106,7 +106,7 @@ const Choose = () => {
 
           {/* Card 5 */}
           <div className="col-lg-4 col-md-6">
-            <div className="card h-100 shadow-sm text-center">
+            <div className="choose-  card h-100 shadow-sm text-center">
               <div className="p-3">
                 <img src={cash} className="choose-img-top" alt="Lowest Commission" />
               </div>

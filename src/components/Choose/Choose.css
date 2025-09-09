@@ -26,17 +26,17 @@
   height: 105px;
   font-family: 'Rubik', sans-serif;
   font-style: semibold;
-  font-size: 44px;
+  font-size: 47px;
   line-height: 54px;
   letter-spacing: 0%;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-left: -10px;
 
 }
 
 /* Card styling */
-.card {
+.choose-card {
   border: none;
   border-radius: 15px;
   overflow: hidden;

@@ -28,26 +28,26 @@ import plus from "../../assets/Plus.png";
 const Latest = () => {
   return (
     <section className="latest-section py-5">
-      <div className="container">
+      <div className="container p-0">
         {/* Section Heading */}
         <p className="latest-subtitle text-center">| LATEST PROPERTY |</p>
         <h2 className="latest-title text-center">
-          Properties for sale in your favorite area
+          Properties for sale in your favorite <br />area
         </h2>
 
         {/* Row Start */}
-        <div className="row mt-5">
+        <div className="row mt-5" id="latestID">
 
           {/* Card 1 */}
           <div className="col-md-4 mb-4">
-            <div className="card latest-card h-100">
-              <div className="card-img position-relative">
+            <div className="card latest-card h-100 p-0">
+              <div className="latest-card-img position-relative">
                 <img src={house1} className="card-img-top" alt="Luxury villa" />
                 <span className="tag hot">Hot offer</span>
                 <span className="tag sale">Sale</span>
               </div>
-              <div className="card-body text-start">
-                <h5 className="property-title">Luxury villa in Rego Park</h5>
+              <div className="latest-card-body text-start">
+                <h5 className="property-title  ">Luxury villa in Rego Park</h5>
                 <p className="property-price">$590,693</p>
                 <div className="property-details">
                   <span><img src={car} alt="" /> 4</span>
@@ -56,8 +56,8 @@ const Latest = () => {
                 </div>
               </div>
               <hr className="divider" />
-              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
-                <div className="d-flex align-items-center">
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white pb-5">
+                <div className="d-flex align-items-center mt-4">
                   <img src={jacobjones} alt="Jacob Jones" className="agent-img" />
                   <span className="agent-name">Jacob Jones</span>
                 </div>
@@ -72,11 +72,11 @@ const Latest = () => {
 
           {/* Card 2 */}
           <div className="col-md-4 mb-4">
-            <div className="card latest-card h-100">
-              <div className="card-img position-relative">
+            <div className="card latest-card h-100 p-0">
+              <div className="latest-card-img position-relative">
                 <img src={house2} className="card-img-top" alt="Equestrian Home" />
               </div>
-              <div className="card-body text-start">
+              <div className="latest-card-body text-start">
                 <h5 className="property-title">Equestrian Family Home</h5>
                 <p className="property-price">$590,693</p>
                 <div className="property-details">
@@ -86,8 +86,8 @@ const Latest = () => {
                 </div>
               </div>
               <hr className="divider" />
-              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
-                <div className="d-flex align-items-center">
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white pb-5">
+                <div className="d-flex align-items-center mt-4">
                   <img src={diannerussel} alt="Dianne Russel" className="agent-img" />
                   <span className="agent-name">Dianne Russel</span>
                 </div>
@@ -102,13 +102,13 @@ const Latest = () => {
 
           {/* Card 3 */}
           <div className="col-md-4 mb-4">
-            <div className="card latest-card h-100">
-              <div className="card-img position-relative">
+            <div className="card latest-card h-100 p-0">
+              <div className="latest-card-img position-relative">
                 <img src={house3} className="card-img-top" alt="Equestrian Home" />
                 <span className="tag hot">Hot offer</span>
                 <span className="tag sale">Sale</span>
               </div>
-              <div className="card-body text-start">
+              <div className="latest-card-body text-start">
                 <h5 className="property-title">Equestrian Family Home</h5>
                 <p className="property-price">$590,693</p>
                 <div className="property-details">
@@ -118,8 +118,8 @@ const Latest = () => {
                 </div>
               </div>
               <hr className="divider" />
-              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
-                <div className="d-flex align-items-center">
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white pb-5">
+                <div className="d-flex align-items-center mt-4">
                   <img src={robertfox} alt="Robert Fox" className="agent-img" />
                   <span className="agent-name">Robert Fox</span>
                 </div>
@@ -134,13 +134,13 @@ const Latest = () => {
 
           {/* Card 4 */}
           <div className="col-md-4 mb-4">
-            <div className="card latest-card h-100">
-              <div className="card-img position-relative">
+            <div className="card latest-card h-100 p-0">
+              <div className="latest-card-img position-relative">
                 <img src={house4} className="card-img-top" alt="Luxury villa" />
                 <span className="tag hot">Hot offer</span>
                 <span className="tag sale">Sale</span>
               </div>
-              <div className="card-body text-start">
+              <div className="latest-card-body text-start">
                 <h5 className="property-title">Luxury villa in Rego Park</h5>
                 <p className="property-price">$590,693</p>
                 <div className="property-details">
@@ -150,8 +150,8 @@ const Latest = () => {
                 </div>
               </div>
               <hr className="divider" />
-              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
-                <div className="d-flex align-items-center">
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white pb-5">
+                <div className="d-flex align-items-center mt-4">
                   <img src={jennywilson} alt="Jenny Wilson" className="agent-img" />
                   <span className="agent-name">Jenny Wilson</span>
                 </div>
@@ -166,13 +166,13 @@ const Latest = () => {
 
           {/* Card 5 */}
           <div className="col-md-4 mb-4">
-            <div className="card latest-card h-100">
-              <div className="card-img position-relative">
+            <div className="card latest-card h-100 p-0">
+              <div className="latest-card-img position-relative">
                 <img src={house5} className="card-img-top" alt="Equestrian Home" />
                 <span className="tag hot">Hot offer</span>
                 <span className="tag sale">Sale</span>
               </div>
-              <div className="card-body text-start">
+              <div className="latest-card-body text-start">
                 <h5 className="property-title">Equestrian Family Home</h5>
                 <p className="property-price">$590,693</p>
                 <div className="property-details">
@@ -182,8 +182,8 @@ const Latest = () => {
                 </div>
               </div>
               <hr className="divider" />
-              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
-                <div className="d-flex align-items-center">
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white pb-5">
+                <div className="d-flex align-items-center mt-4">
                   <img src={bessiecooper} alt="Bessie Cooper" className="agent-img" />
                   <span className="agent-name">Bessie Cooper</span>
                 </div>
@@ -198,11 +198,11 @@ const Latest = () => {
 
           {/* Card 6 */}
           <div className="col-md-4 mb-4">
-            <div className="card latest-card h-100">
-              <div className="card-img position-relative">
+            <div className="card latest-card h-100 p-0">
+              <div className="latest-card-img position-relative">
                 <img src={house6} className="card-img-top" alt="Luxury villa" />
               </div>
-              <div className="card-body text-start">
+              <div className="latest-card-body text-start">
                 <h5 className="property-title">Luxury villa in Rego Park</h5>
                 <p className="property-price">$590,693</p>
                 <div className="property-details">
@@ -212,8 +212,8 @@ const Latest = () => {
                 </div>
               </div>
               <hr className="divider" />
-              <div className="card-footer d-flex justify-content-between align-items-center bg-white">
-                <div className="d-flex align-items-center">
+              <div className="card-footer d-flex justify-content-between align-items-center bg-white pb-5">
+                <div className="d-flex align-items-center mt-4">
                   <img src={lesliealexander} alt="Leslie Alexander" className="agent-img" />
                   <span className="agent-name">Leslie Alexander</span>
                 </div>

@@ -30,11 +30,13 @@ const Neighborhood = () => {
   };
 
   return (
+
+    
     <section className="neighborhood-section">
       <div className="container d-contents">
         {/* Section Title */}
         <div className="section-header">
-          <h6 className="neighborhood-subtitle">| NEIGHBORHOOD |</h6>
+          <h6 className="neighborhood-subtitle d-flex justify-content-center">| NEIGHBORHOOD |</h6>
           <h2 className="neighborhood-title">Find Your Neighborhood</h2>
         </div>
 

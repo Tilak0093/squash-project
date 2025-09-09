@@ -16,7 +16,7 @@ const MainContent = () => {
         <About />
       </div>
 
-      <div className="container">
+      <div className="container-fluid" style={{ backgroundColor: '#f1f1f1' }}>
         <Choose />
       </div>
 
@@ -24,15 +24,15 @@ const MainContent = () => {
         <Latest />
       </div>
 
-      <div className="container">
+      <div className="container-fluid" style={{ backgroundColor: '#f1f1f1' }}>
         <Neighborhood />
       </div>
 
-      <div className="container">
+      <div className="container-fluid">
         <Team />
       </div>
 
-      <div className="container">
+      <div className="container-fluid" style={{ backgroundColor: '#f1f1f1' }}>
         <Blog />
       </div>
 

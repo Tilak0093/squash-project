@@ -49,7 +49,7 @@
 /* Bottom Wrapper (keeps toggle + search box together) */
 .bottom-wrapper {
   position: absolute;
-  bottom: -45px;
+  bottom: -58px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 100rem;

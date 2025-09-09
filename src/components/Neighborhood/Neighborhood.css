@@ -1,6 +1,6 @@
 /* Section */
 .neighborhood-section {
-  background-color: #fff;
+  background-color: #f1f1f1;
 }
 
 .section-header {
@@ -9,18 +9,29 @@
 }
 
 .neighborhood-subtitle {
+  height: 30px;
+  font-family: 'Rubik', sans-serif;
   color: #6e00ff;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
   display: block;
+  margin-top: 9rem;
+  
 }
 
 .neighborhood-title {
-  font-size: 32px;
-  font-weight: bold;
-  color: #222;
-  margin-top: 8px;
+  height: 54px;
+  font-family: 'Rubik', sans-serif;
+  font-style: semibold;
+  font-size: 47px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 54px;
+  letter-spacing: 0%;
+  margin-top: 30px;
 }
 
 /* Card */
@@ -28,9 +39,9 @@
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  width: 328px;
+  max-width: 328px;
   height: 407px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .card-img {
@@ -59,14 +70,27 @@
 }
 
 .card-title {
-  font-size: 20px;
+  height: 34px;
+  font-size: 24px;
   font-weight: 600;
   color: #ffffff !important; /* City name in white */
+  font-family: 'Rubik', sans-serif;
+  line-height: 34px;
+  letter-spacing: 0%;
+  font-style: semibold;
+
+
+
 }
 
 .property-count {
-  font-size: 14px;
-  font-weight: 500;
+  height: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  font-style: regular;
+  line-height: 26px;
+  letter-spacing: 0%;
   color: #6e00ff; /* Property count in purple */
 }
 
@@ -94,12 +118,13 @@
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 25px;
+  margin-top: 75px;
 }
 
 .slick-track {
   display: flex !important;
-  gap: 30px; /* gap between cards */
+  gap: 25px; /* gap between cards */
+  margin-top: 50px;
 }
 
 .nav-btn {
@@ -160,9 +185,6 @@
 
 /* Add padding inside the carousel */
 .slick-list {
-  margin: 0 -10px; /* balance margins */
+  margin: 0 -15px; /* balance margins */
 }
-
-.slick-slide > div {
-  padding: 0 10px; /* spacing between cards */
-}
+  
