@@ -2,24 +2,36 @@
 .subscribe-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 14rem !important;
+  margin-bottom: 10rem;
 }
 
 /* Card */
 .subscribe-card {
   background-color: #e9d4f7;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 30px 20px;
-  max-width: 950px;
+  min-width: 1400px !important;
   width: 100%;
+  min-height: 325px !important;
   position: relative;
   overflow: visible;
 }
 
 /* Title */
 .subscribe-title {
-  font-weight: 700;
-  font-size: 24px;
+  width: 531px;
+  height: 100px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  font-style: semibold;
+  line-height: 50px;
+  letter-spacing: 0%;
   color: #6e00ff;
+  position: absolute;
+  top: 80px;
+  left: 100px;
 }
 
 /* Form layout */
@@ -32,27 +44,43 @@
 
 /* Email Input */
 .subscribe-input {
+  min-width: 588px;
+  min-height: 60px;
   flex: 1;
   padding: 12px 15px;
   border: none;
   outline: none;
-  font-size: 14px;
-  border-radius: 25px; /* full pill shape */
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  border-radius: 10px; 
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   background: #fff;
+  position: absolute;
+  bottom: 55px;
+  left: 105px;
 }
+
 
 /* Subscribe Button (separate) */
 .subscribe-btn {
-  background-color: #28a745;
+  width: 115px;
+  height: 39px;
+  background-color: #00b753;
   color: #fff;
   font-weight: 600;
-  padding: 12px 25px;
+  padding: 10px 20px 10px 20px;
+  gap: 10px;
   border: none;
-  border-radius: 25px; /* fully rounded */
+  border-radius: 5px; /* fully rounded */
   cursor: pointer;
   transition: background 0.3s ease;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: absolute;
+  bottom: 65px;
+  left: 550px;
 }
 
 .subscribe-btn:hover {
@@ -66,10 +94,11 @@
 }
 
 .subscribe-img {
-  max-height: 280px;
+  max-height: 430px;
+  max-width: 485px;
   position: absolute;
-  bottom: -125px; /* pops out of purple card */
-  right: 0;
+  bottom: -280px; /* pops out of purple card */
+  right: 30;
   filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
 }
 

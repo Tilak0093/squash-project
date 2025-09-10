@@ -4,7 +4,7 @@ import subscribeImg from "../../assets/subscribe.png";
 
 const Subscribe = () => {
   return (
-    <section className="subscribe-wrapper my-5">
+    <section className="subscribe-wrapper ">
       <div className="subscribe-card">
         <div className="row align-items-center">
           {/* Left Side */}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/footerlogo.png";
 import facebook from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import insta from "../../assets/insta.png";
@@ -14,9 +14,6 @@ const Footer = () => {
           {/* Logo + Description */}
           <div className="col-md-6 col-lg-3">
             <img src={logo} alt="Dreamzkape Logo" className="footer-logo" />
-            <p className="footer-title">
-              Dreamz<span>kape</span>
-            </p>
             <p className="footer-text">
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit sed consequuntur magni dolores eos qui ratione.
@@ -74,7 +71,7 @@ const Footer = () => {
         </div>
 
         {/* Footer bottom */}
-        <div className="footer-bottom mt-4">
+        <div className="footer-bottom">
           <p>© 2023 Copyright Dreamzkape, All rights reserved.</p>
         </div>
       </div>

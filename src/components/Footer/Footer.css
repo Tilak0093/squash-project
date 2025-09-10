@@ -1,34 +1,33 @@
 .footer {
   background-color: #120326;
   color: white;
-  padding: 50px 0;
+  padding: 50px 0 ;
   overflow-x: hidden; /* Prevents horizontal scrollbar */
 }
 
 .footer-logo {
-  width: 60px;
+  width: 150px;
+  height: 120px;
   margin-bottom: 10px;
-}
-
-.footer-title {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.footer-title span {
-  color: #6e00ff;
 }
 
 .footer-text {
-  font-size: 14px;
+  width: 319px;
+  height: 104px;
+  top: 130px ; 
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   margin-bottom: 15px;
-  line-height: 1.6;
-  color: #ddd;
+  line-height: 26px;
+  color: #f1f1f1;
 }
 
 .footer-icons a img {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  top: 264px;
   margin-right: 8px;
   transition: transform 0.3s;
 }
@@ -37,8 +36,14 @@
 }
 
 .footer h4 {
-  font-weight: 600;
-  margin-bottom: 15px;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px !important;
+  font-style: bold !important;
+  line-height: 40px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
   font-size: 16px;
 }
 
@@ -51,9 +56,15 @@
   margin-bottom: 8px;
 }
 .footer-list li a {
+  width: 96px;
+  height: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: regular;
   text-decoration: none;
-  color: white;
-  font-size: 14px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
   transition: color 0.3s;
 }
 .footer-list li a:hover {
@@ -93,12 +104,16 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid #555;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px !important;
+  font-style: medium !important;
+  line-height: 28px;
+  letter-spacing: 0%;
+  border-top: 1px solid #ffffff;
   text-align: center;
-  padding-top: 20px;
-  font-size: 13px;
+  margin-top: 90px !important;
   color: #bbb;
-  margin-top: 30px;
 }
 
 /* Make Page & Quick Links evenly spaced */
