@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "./Neighborhood.css";
-import newyork from "../../assets/newyork.jpg";
-import atlanta from "../../assets/atlanta.jpg";
-import singapore from "../../assets/singapore.jpg";
-import paris from "../../assets/paris.jpg";
-import arrow from "../../assets/arrow.png";
+import newyork from "../../../assets/newyork.jpg";
+import atlanta from "../../../assets/atlanta.jpg";
+import singapore from "../../../assets/singapore.jpg";
+import paris from "../../../assets/paris.jpg";
+import arrow from "../../../assets/arrow.png";
 
 const Neighborhood = () => {
   const sliderRef = useRef(null);

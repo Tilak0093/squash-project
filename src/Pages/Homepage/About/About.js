@@ -1,17 +1,17 @@
 import React from "react";
 import "./About.css";
-import House1 from "../../assets/House1.png";
-import House2 from "../../assets/House2.png";
-import House3 from "../../assets/House3.png";
-import Center1 from "../../assets/Center1.png"; 
-import Circle1 from "../../assets/circle1.png";
-import Circle2 from "../../assets/circle2.png";
-import SmartHome from "../../assets/smarthome.png";
-import AboutPerson from "../../assets/aboutperson.png";
+import House1 from "../../../assets/House1.png";
+import House2 from "../../../assets/House2.png";
+import House3 from "../../../assets/House3.png";
+import Center1 from "../../../assets/Center1.png"; 
+import Circle1 from "../../../assets/circle1.png";
+import Circle2 from "../../../assets/circle2.png";
+import SmartHome from "../../../assets/smarthome.png";
+import AboutPerson from "../../../assets/aboutperson.png";
 
 const About = () => {
   return (
-    <section className="about-section container my-5 pt-5">
+    <section className="about-section container my-5 pt-5"> 
       <div className="row align-items-center">
         
         {/* Left Column (Text + Cards) */}

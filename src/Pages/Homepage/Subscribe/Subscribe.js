@@ -1,6 +1,6 @@
 import React from "react";
 import "./Subscribe.css";
-import subscribeImg from "../../assets/subscribe.png";
+import subscribeImg from "../../../assets/subscribe.png";
 
 const Subscribe = () => {
   return (

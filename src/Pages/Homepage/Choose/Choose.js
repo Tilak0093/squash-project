@@ -1,10 +1,10 @@
 import React from "react";
 import "./Choose.css";
-import piggybank from "../../assets/piggybank.png";
-import house from "../../assets/house.png";
-import hands from "../../assets/hands.png";
-import map from "../../assets/map.png";
-import cash from "../../assets/cash.png";
+import piggybank from "../../../assets/piggybank.png";
+import house from "../../../assets/house.png";
+import hands from "../../../assets/hands.png";
+import map from "../../../assets/map.png";
+import cash from "../../../assets/cash.png";
 
 const Choose = () => {
   return (

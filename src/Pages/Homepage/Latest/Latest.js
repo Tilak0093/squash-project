@@ -2,28 +2,28 @@ import React from "react";
 import "./Latest.css";
 
 // Import house images
-import house1 from "../../assets/latesthouse1.png";
-import house2 from "../../assets/latesthouse2.png";
-import house3 from "../../assets/latesthouse3.png";
-import house4 from "../../assets/latesthouse4.png";
-import house5 from "../../assets/latesthouse5.png";
-import house6 from "../../assets/latesthouse6.png";
+import house1 from "../../../assets/latesthouse1.png";
+import house2 from "../../../assets/latesthouse2.png";
+import house3 from "../../../assets/latesthouse3.png";
+import house4 from "../../../assets/latesthouse4.png";
+import house5 from "../../../assets/latesthouse5.png";
+import house6 from "../../../assets/latesthouse6.png";
 
 // Import profile images
-import jacobjones from "../../assets/jacobjones.png";
-import diannerussel from "../../assets/diannerussel.png";
-import robertfox from "../../assets/robertfox.png";
-import jennywilson from "../../assets/jennywilson.png";
-import bessiecooper from "../../assets/bessiecooper.png";
-import lesliealexander from "../../assets/lesliealexander.png";
+import jacobjones from "../../../assets/jacobjones.png";
+import diannerussel from "../../../assets/diannerussel.png";
+import robertfox from "../../../assets/robertfox.png";
+import jennywilson from "../../../assets/jennywilson.png";
+import bessiecooper from "../../../assets/bessiecooper.png";
+import lesliealexander from "../../../assets/lesliealexander.png";
 
 // Import icons
-import car from "../../assets/car4.png";
-import bath from "../../assets/bathroom4.png";
-import sqft from "../../assets/sqft.png";
-import share from "../../assets/share.png";
-import heart from "../../assets/Heart.png";
-import plus from "../../assets/Plus.png";
+import car from "../../../assets/car4.png";
+import bath from "../../../assets/bathroom4.png";
+import sqft from "../../../assets/sqft.png";
+import share from "../../../assets/share.png";
+import heart from "../../../assets/Heart.png";
+import plus from "../../../assets/Plus.png";
 
 const Latest = () => {
   return (
