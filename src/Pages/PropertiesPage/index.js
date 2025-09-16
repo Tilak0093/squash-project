@@ -3,7 +3,7 @@ import Property from "./components/Property/Property";
 
 const PropertiesPage = () => {
   return (
-    <div className="container">
+    <div className="container-">
         <Property />
     </div>
   );

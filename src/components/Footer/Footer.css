@@ -1,7 +1,7 @@
 .footer {
   background-color: #120326;
   color: white;
-  padding: 50px 0 ;
+  padding-top: 50px;
   overflow-x: hidden; /* Prevents horizontal scrollbar */
 }
 
@@ -79,25 +79,30 @@
 .subscribe-box {
   display: flex;
   margin-top: 10px;
-  gap: 6px;
 }
 .subscribe-box input {
   flex: 1;
   padding: 10px;
   border: none;
-  border-radius: 6px;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .subscribe-box button {
   background-color: #00c853;
   color: white;
   border: none;
   padding:0 15px;
-  border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 .subscribe-box button:hover {
   background-color: #00a844;
@@ -112,8 +117,17 @@
   letter-spacing: 0%;
   border-top: 1px solid #ffffff;
   text-align: center;
-  margin-top: 90px !important;
   color: #bbb;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  gap: 115px;
+}
+
+.footer-paragraph{
+  padding-top: 30px;
 }
 
 /* Make Page & Quick Links evenly spaced */

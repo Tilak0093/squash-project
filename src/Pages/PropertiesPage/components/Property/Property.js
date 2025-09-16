@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./property.css";
 
 import propertybg from "../../../../assets/propertybg.jpg";
+import Diamond from "../../../../assets/propertydiamond.png";
 import propertycard1 from "../../../../assets/propertycard1.png";
 import propertycard2 from "../../../../assets/propertycard2.png";
 import propertycard3 from "../../../../assets/propertycard3.png";
@@ -17,6 +18,11 @@ import propertybath from "../../../../assets/propertybath.png";
 import propertybed from "../../../../assets/propertybed.png";
 import propertysqft from "../../../../assets/propertysqft.png";
 
+import  Button1  from "../../../../assets/propertybutton1.png";
+import  Button2  from "../../../../assets/propertybutton2.png";
+import  Button3  from "../../../../assets/propertybutton3.png";
+import  Button4  from "../../../../assets/propertybutton4.png";
+
 const cards = [
   { id: 1, img: propertycard1 },
   { id: 2, img: propertycard2 },
@@ -30,7 +36,7 @@ const cards = [
 ];
 
 const Property = () => {
-  const [viewMode, setViewMode] = useState("grid-3"); // grid-3 | grid-2 | list
+  const [viewMode, setViewMode] = useState("grid-4"); // default to 4-column
   const [perPage, setPerPage] = useState(12);
   const [sortBy, setSortBy] = useState("Featured");
 
@@ -46,47 +52,57 @@ const Property = () => {
             <h1 className="property-hero-title">Property</h1>
             <div className="hero-breadcrumb">
               <a href="/" className="breadcrumb-home">Home</a>
-              <span className="breadcrumb-sep"> / </span>
+              <img src={Diamond} alt="diamond" className="breadcrumb-separator" />
               <span className="breadcrumb-current">Property</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Controls: View As / Showing Results / Sort By */}
+      {/* Controls */}
       <section className="container property-controls">
         <div className="row align-items-center">
           <div className="col-md-6">
             <div className="view-as">
               <span className="view-label">View As</span>
-
+              
               <button
-                className={`view-btn ${viewMode === "grid-3" ? "active" : ""}`}
-                onClick={() => setViewMode("grid-3")}
-                title="3-column grid"
+              className={`view-btn ${viewMode === "grid-4" ? "active" : ""}`}
+              onClick={() => setViewMode("grid-4")}
+              title="4-column grid"
               >
-                <i className="fas fa-th"></i>
+                <img src={Button1} alt="4-column grid" className="view-icon" />
               </button>
-
+              
               <button
-                className={`view-btn ${viewMode === "grid-2" ? "active" : ""}`}
-                onClick={() => setViewMode("grid-2")}
-                title="2-column grid"
+              className={`view-btn ${viewMode === "grid-3" ? "active" : ""}`}
+              onClick={() => setViewMode("grid-3")}
+              title="3-column grid"
               >
-                <i className="fas fa-th-large"></i>
+                <img src={Button2} alt="3-column grid" className="view-icon" />
               </button>
-
+              
               <button
+              className={`view-btn ${viewMode === "grid-2" ? "active" : ""}`}
+              onClick={() => setViewMode("grid-2")}
+              title="2-column grid"
+              >
+                <img src={Button3} alt="2-column grid" className="view-icon" />
+                </button>
+                
+                <button
                 className={`view-btn ${viewMode === "list" ? "active" : ""}`}
                 onClick={() => setViewMode("list")}
                 title="list view"
-              >
-                <i className="fas fa-list"></i>
-              </button>
-            </div>
-          </div>
+                >
+                  <img src={Button4} alt="list view" className="view-icon" />
+                  </button>
+                </div>
+              </div>
 
-          <div className="col-md-6 text-md-end mt-3 mt-md-0">
+
+          {/* right controls */}
+          <div className="col-md-6 text-md-end mt-3 mt-md-0 d-flex gap-3 align-items-center justify-content-end">
             <span className="showing">Showing 1-12 Results</span>
 
             <div className="control-pill ms-3 d-inline-block">
@@ -100,7 +116,7 @@ const Property = () => {
                 <option value={48}>48</option>
               </select>
             </div>
-
+            <span className="showing">Sort BY </span>
             <div className="control-pill ms-2 d-inline-block">
               <select
                 className="form-select sortby-select"
@@ -124,7 +140,9 @@ const Property = () => {
             <div
               key={c.id}
               className={
-                viewMode === "grid-3"
+                viewMode === "grid-4"
+                  ? "col-lg-3 col-md-4 col-sm-6 mb-4"
+                  : viewMode === "grid-3"
                   ? "col-lg-4 col-md-6 mb-4"
                   : viewMode === "grid-2"
                   ? "col-lg-6 col-md-6 mb-4"
@@ -134,44 +152,34 @@ const Property = () => {
               <div className="card property-card h-100">
                 <div className="card-img-wrap">
                   <img src={c.img} className="card-img-top" alt="property" />
+                </div>
+
+                <div className="card-body">
+                  
                   <div className="price-text">
                     <span className="price-amount">$4500</span>
                     <span className="price-suffix">/Rent</span>
                   </div>
-
                   <div className="sale-badge">For Sale</div>
-                </div>
 
-                <div className="card-body">
-                  <h6 className="card-price text-primary">
-                    <span style={{ color: "#6e00ff", fontWeight: 700 }}>
-                      $4500
-                    </span>
-                    <small className="ms-1" style={{ color: "#6e00ff" }}>
-                      /Rent
-                    </small>
-                    <span className="float-end sale-pill">For Sale</span>
-                  </h6>
-
-                  <h5 className="card-title">Comefortable Appartment</h5>
+                  <h5 className="property-card-title">Comfortable Apartment</h5>
 
                   <p className="card-location">
                     <img src={Location} alt="loc" />
-                    <span className="loc-text">709 West Drive Chicago, IL 60606</span>
+                    <span className="loc-text">
+                      709 West Drive Chicago, IL 60606
+                    </span>
                   </p>
 
                   <div className="card-features d-flex gap-2">
                     <div className="feature-box">
                       <img src={propertybed} alt="beds" />
-                      <span>3 Beds</span>
                     </div>
                     <div className="feature-box">
                       <img src={propertybath} alt="baths" />
-                      <span>2 Baths</span>
                     </div>
                     <div className="feature-box">
                       <img src={propertysqft} alt="sqft" />
-                      <span>120sqft</span>
                     </div>
                   </div>
                 </div>
@@ -187,20 +195,27 @@ const Property = () => {
               <ul className="pagination custom-pagination">
                 <li className="page-item">
                   <a className="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
+                    <span aria-hidden="true">‹</span>
                   </a>
                 </li>
-
-                {/* Render 1..12 like the example; highlight '1' */}
-                <li className="page-item"><a className="page-link active" href="#">1</a></li>
-                <li className="page-item"><a className="page-link" href="#">2</a></li>
-                <li className="page-item"><a className="page-link" href="#">3</a></li>
-                <li className="page-item"><a className="page-link" href="#">...</a></li>
-                <li className="page-item"><a className="page-link" href="#">12</a></li>
-
+                <li className="page-item">
+                  <a className="page-link active" href="#">1</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">2</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">3</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">...</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">12</a>
+                </li>
                 <li className="page-item">
                   <a className="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
+                    <span aria-hidden="true">›</span>
                   </a>
                 </li>
               </ul>

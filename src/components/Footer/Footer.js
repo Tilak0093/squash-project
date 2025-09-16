@@ -10,6 +10,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
+        <div className="footer-content">
         <div className="row gy-4 justify-content-between">
           {/* Logo + Description */}
           <div className="col-md-6 col-lg-3">
@@ -72,7 +73,8 @@ const Footer = () => {
 
         {/* Footer bottom */}
         <div className="footer-bottom">
-          <p>© 2023 Copyright Dreamzkape, All rights reserved.</p>
+          <p className="footer-paragraph">© 2023 Copyright Dreamzkape, All rights reserved.</p>
+        </div>
         </div>
       </div>
     </footer>

@@ -9,16 +9,21 @@
 /* ---------- Hero / Breadcrumb ---------- */
 .property-hero{
   background-size: cover;
-  background-position: center;
-  height: 230px;
+  background-position: center;  
+  min-height: 300px;
   position: relative;
+}
+
+.breadcrumb-separator{
+  margin: 4px;
 }
 .property-hero .overlay{
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: #000000 80%;
   display: flex;
   align-items: center;
+  opacity: 80%;
 }
 .hero-inner{
   padding: 30px 15px;
@@ -27,14 +32,14 @@
   color: white;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   margin: 0;
 }
 .hero-breadcrumb{
   margin-top: 8px;
   color: rgba(255,255,255,0.85);
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 }
 .hero-breadcrumb .breadcrumb-home {
   color: rgba(255,255,255,0.85);
@@ -46,42 +51,59 @@
 }
 
 /* ---------- Controls ---------- */
-.property-controls{
+.property-controls {
   margin-top: 30px;
 }
-.view-as{
+
+.view-as {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.view-label{
+
+.view-label {
   font-weight: 600;
-  margin-right: 6px;
-  color: #333;
+  margin-right: 8px;
+  color: #000;
+  font-size: 15px;
 }
-.view-btn{
-  border: 1px solid #e6e6e6;
-  background: white;
-  padding: 8px 10px;
-  border-radius: 6px;
+/* keep button simple */
+.view-btn {
+  border: none;
+  background: transparent; /* no container background */
   cursor: pointer;
-  transition: all 0.15s;
-  color: #666;
-  font-size: 14px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.view-btn i{ font-size: 14px; }
-.view-btn.active{
-  background: white;
-  color: var(--purple);
-  box-shadow: 0 2px 10px rgba(110,0,255,0.08);
-  border-color: rgba(110,0,255,0.15);
+
+/* icons default gray */
+.view-icon {
+  height: 30px;
+  transition: filter 0.3s ease-in-out;
+  filter: grayscale(100%) brightness(70%);
 }
+
+/* icon hover → #6E00FF */
+.view-btn:hover .view-icon {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(96%) saturate(7475%)
+    hue-rotate(266deg) brightness(95%) contrast(110%);
+}
+
+
+
 
 /* right side */
 .showing{
-  color: #333;
-  font-size: 14px;
-  margin-right: 12px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: regular;
+  font-family: 'Rubik', sans-serif;
+  line-height: 26px;
+  letter-spacing: 2%;
+
 }
 
 /* pills */
@@ -89,24 +111,42 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 4px 12px;
-  height: 36px;
+  height: 40px;
+  width: 78px;
   border: none;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  background: white;
   font-weight: 600;
 }
 
-/* make select look like green pill where appropriate */
-.perpage-select, .sortby-select {
-  min-width: 110px;
-}
-.perpage-select {
-  color: #fff;
-  background: var(--green);
+/* Custom white dropdown arrow */
+.control-pill select.form-select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'><path d='M1.5 5.5l6.5 6 6.5-6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 14px 14px;
+  padding-right: 2rem;
+  color: #fff; /* text white inside */
 }
 
+
+.control-pill{
+  background: #00b753;
+  border-radius: 20px;
+}
+
+/* make select look like green pill where appropriate */
+.perpage-select {
+  min-width: 78px;
+  height: 40px;
+}
+
+.sortby-select{
+  min-width: 130px;
+  height: 40px;
+  justify-content: center;
+}
 /* ---------- Cards ---------- */
 .property-cards .property-card{
   border-radius: 8px;
@@ -128,45 +168,47 @@
 }
 .card-img-wrap img{
   width: 100%;
-  height: 210px;
+  height: 341px;
   object-fit: cover;
   display: block;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 
 /* price top-left (small overlay) */
 .price-text{
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: rgba(255,255,255,0.95);
-  padding: 8px 10px;
-  border-radius: 6px;
+  border-radius: 5px;
   display: inline-flex;
   align-items: baseline;
   gap: 6px;
-  border: 1px solid rgba(0,0,0,0.06);
-}
-.price-text .price-amount{
+  max-width: 150px;
+  max-height: 34px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: semibold;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0%;
   color: var(--purple);
-  font-weight: 700;
-  font-size: 14px;
-}
-.price-text .price-suffix{
-  color: var(--purple);
-  font-size: 12px;
 }
 
 /* sale badge top-right */
 .sale-badge{
-  position: absolute;
-  right: 12px;
-  top: 12px;
   background: var(--green);
   color: white;
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 16px 33px 16px 33px;
+  border-radius: 5px;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 20px;
+  max-width: 145px;
+  max-height: 56px;
+  line-height: 118%;
+  gap: 10px;
+  letter-spacing: 0%;
+  position: absolute;
+  right: 22px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
@@ -177,30 +219,41 @@
   flex-direction: column;
   gap: 8px;
   flex: 1 1 auto;
+  background-color: #ffffff !important;
 }
 .card-price {
   display: none; /* we already show price as overlay; small top price suppressed */
 }
-.card-title{
-  color: var(--black);
-  font-size: 16px;
-  font-weight: 700;
+.property-card-title{
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: semibold;
+  line-height: 34px;
+  letter-spacing: 0%;
   margin: 0;
   font-family: 'Rubik', sans-serif;
+  text-align: start;
+  margin-top: 30px;
 }
 
 /* location row */
 .card-location{
   display: flex;
   align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%; 
   gap: 8px;
-  color: var(--purple);
-  font-size: 13px;
+  color: #000000;
   margin: 6px 0 10px;
 }
 .card-location img{
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -208,21 +261,9 @@
 .card-features{
   margin-top: auto;
 }
-.feature-box{
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid #e9e9e9;
-  padding: 8px 10px;
-  border-radius: 6px;
-  font-size: 13px;
-  color: #666;
-  background: #fff;
-  min-width: 88px;
-}
 .feature-box img{
-  width: 16px;
-  height: 16px;
+  width: 119px;
+  height: 50px;
 }
 
 /* small responsive tweaks for features layout */
@@ -245,9 +286,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  color: #8a8a8a;
-  background: #fff;
+  border-radius: 3px;
+  color: #888888;
+  background: #f1f1f1;
   box-shadow: 0 2px 6px rgba(0,0,0,0.03);
 }
 .custom-pagination .page-link:hover{
@@ -259,7 +300,7 @@
 .custom-pagination .page-item .page-link:focus {
   background: var(--green);
   color: white;
-  border-radius: 8px;
+  border-radius: 3px;
   box-shadow: none;
 }
 
@@ -268,6 +309,7 @@
 .custom-pagination .page-item:last-child .page-link {
   background: #f3f3f3;
   color: #666;
+  font-size: 30px;
 }
 
 /* center pagination container */
