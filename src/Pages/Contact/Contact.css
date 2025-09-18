@@ -1,0 +1,119 @@
+/* ---------- Hero / Breadcrumb Section ---------- */
+.property-hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  position: relative;
+}
+
+.property-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-inner {
+  padding: 30px 15px;
+}
+
+.property-hero-title {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin: 0;
+}
+
+.hero-breadcrumb {
+  margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.breadcrumb-home {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+.breadcrumb-separator {
+  margin: 0 6px;
+  vertical-align: middle;
+  height: 16px;
+}
+
+.breadcrumb-current {
+  color: #6e00ff;
+  font-weight: 600;
+}
+
+/* ---------- Map Section ---------- */
+.map-section {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* ---------- Contact Form Section ---------- */
+.contact-form-section {
+  background: #fff;
+}
+
+.form-title {
+  font-size: 40px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: semibold;
+  line-height: 50px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.form-subtitle {
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #474747;
+  margin-bottom: 30px;
+}
+
+.contact-form .form-control {
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  line-height: 26px;
+  letter-spacing: 2%;
+  color: #474747;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb;
+  padding: 12px 14px;
+  font-size: 16px;
+}
+
+.contact-form .form-control:focus {
+  border-color: #6e00ff;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-submit {
+  background-color: #00B753;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    gap: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #009944;
+}

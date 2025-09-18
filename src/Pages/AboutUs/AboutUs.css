@@ -1,0 +1,461 @@
+/* ---------- Hero / Breadcrumb Section ---------- */
+.property-hero {
+  background: url("../../assets/aboutus2.jpg") no-repeat center center/cover;
+  min-height: 300px;
+  position: relative;
+}
+
+.property-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-inner {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.property-hero-title {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin: 0;
+}
+
+.hero-breadcrumb {
+  margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.breadcrumb-home {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+.breadcrumb-separator {
+  margin: 0 6px;
+  vertical-align: middle;
+  height: 16px;
+}
+
+.breadcrumb-current {
+  color: #6e00ff;
+  font-weight: 600;
+}
+
+/* ---------- About Intro Section ---------- */
+.about-intro {
+  background-color: #ffffff;
+}
+
+.about-intro-image {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.aboutus-intro-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #555;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+/* Features (Vision / Mission) */
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutus-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bbbbbb;
+  border-radius: 10px;
+  max-width: 612px;
+  max-height: 160px;
+  padding: 20px 30px;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.aboutus-card:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.aboutus-card-icon {
+  width: 63px;
+  height: 66px;
+  object-fit: contain;
+  margin-right: 35px;
+}
+
+.about-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutus-card-title {
+  color: #000000;
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 4px;
+}
+
+.about-card-title-dark {
+  color: #000;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 4px;
+}
+
+.aboutus-card-description {
+  color: #474747;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+
+.text-purple {
+  color: #6e00ff;
+}
+
+.border-purple {
+  border-color: #6e00ff !important;
+}
+
+.aboutus-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #474747;
+}
+
+
+/* ---------- Stats Section ---------- */
+.stats-section {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+ .stats-overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.stats-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stats-item {
+  flex: 1 1 200px;
+  max-width: 250px;
+  padding: 20px;
+}
+
+.stats-number {
+  font-family: 'Rubik', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.stats-label {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Optional subtle border for separation */
+.stat-item:not(:last-child) {
+  border-right: 1px solid rgba(0,0,0,0.08);
+}
+
+/* ---------- Blog Section ---------- */
+.blog-section {
+  background-color: #ffffff; 
+}
+
+.aboutus-section-subtitle {
+  font-family: 'Rubik', sans-serif;
+  color: #6e00ff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  margin-top: 5.5rem;
+}
+
+.aboutus-section-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 54px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.blog-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background: transparent;
+  transition: transform 0.3s ease;
+  max-height: 476px;
+  max-width: 447px;
+  margin: 30px auto 0;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card-img {
+  position: relative;
+}
+
+.blog-card-img img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-date-tag {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 8px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.blog-date-tag h5 {
+  font-family: 'Rubik', sans-serif;
+  color: #2b2b2b;
+  margin: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.blog-date-tag p {
+  font-family: 'Rubik', sans-serif;
+  color: #808080;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.blog-card-body {
+  padding-top: 12px;
+}
+
+.blog-card-meta {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6e00ff;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+.blog-card-meta span {
+  color: #6e00ff;
+  font-weight: 500;
+}
+
+.blog-card-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.blog-card-description {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #474747;
+  margin-top: 10px;
+}
+
+/* ---------- Testimonials Section ---------- */
+.testimonials-section {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-quote {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+}
+
+.testimonial-quote img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.testimonial-client {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.testimonial-info h6 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+}
+
+.testimonial-info p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  color: #808080;
+  margin: 2px 0 5px 0;
+}
+
+.stars {
+  font-size: 14px;
+  color: #ffb400;
+}
+
+/* ---------- Team Section ---------- */
+.team-section {
+  background: #fff;
+  padding: 80px 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991px) {
+  .property-hero-title {
+    font-size: 36px;
+  }
+
+  .aboutus-intro-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-cards {
+    gap: 15px;
+  }
+
+  .aboutus-card {
+    padding: 12px 15px;
+    border-radius: 12px;
+  }
+
+  .aboutus-card-title,
+  .about-card-title-dark {
+    font-size: 18px;
+  }
+
+  .aboutus-card-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .stats-wrapper {
+    gap: 40px;
+  }
+  
+  .stat-number {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .stats-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .stat-item {
+    border-right: none !important;
+  }
+  
+  .stat-number {
+    font-size: 32px;
+  }
+  
+  .stat-title {
+    font-size: 16px;
+  }
+}
