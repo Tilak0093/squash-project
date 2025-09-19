@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="propertypro-header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white p-0">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white p-0 w-100">
         <div className="container">
           {/* Logo */}
           <a className="navbar-brand" href="/">
@@ -41,9 +41,29 @@ function Header() {
               <li className="nav-item">
                 <a className="nav-link" href="/Blogs">Blog</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/service">Service</a>
+
+              {/* Service Dropdown */}
+              <li className="nav-item dropdown">
+                <a 
+                  className="nav-link dropdown-toggle" 
+                  href="/service" 
+                  id="serviceDropdown" 
+                  role="button" 
+                  data-bs-toggle="dropdown" 
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="serviceDropdown">
+                  <li>
+                    <a className="dropdown-item" href="/service">Service</a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/service-detail">Service Detail</a>
+                  </li>
+                </ul>
               </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="/property">Property</a>
               </li>

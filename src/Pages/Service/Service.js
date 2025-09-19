@@ -6,16 +6,12 @@ import propertybg from "../../assets/propertybg.jpg";
 import Diamond from "../../assets/propertydiamond.png";
 
 // card background image
-
 import cardbg from "../../assets/servicecardbackground.png";
 
 // house images
-
 import house1 from "../../assets/service1.png";
-import house2 from "../../assets/service2.png";
 
 // stats background image
-
 import Home2 from "../../assets/aboutus2.jpg";
 
 const Service = () => {
@@ -63,8 +59,8 @@ const Service = () => {
                   <div className="service-num">{card.num}</div>
                   <h5 className="service-title">{card.title}</h5>
                   <p className="service-desc">
-                    High level overviews. approaches lverall value 
-                    proposition. Organically grow the holistic world 
+                    High level overviews. approaches lverall value
+                    proposition. Organically grow the holistic world
                     view of disruptive.
                   </p>
                 </div>
@@ -86,32 +82,50 @@ const Service = () => {
                 Learn More About Who We Are in Real Estate
               </h3>
               <p className="service-about-text">
-                Distinctively re-engineer revolutionary meta-services and premium  At vero eos et accusamus et 
-                iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti 
-                quos dolore.
+                Distinctively re-engineer revolutionary meta-services and premium
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolore.
               </p>
             </div>
           </div>
 
           <div className="row align-items-center">
             <div className="col-md-6 order-md-2 mb-3">
-              <img src={house2} alt="house" className="img-fluid rounded" />
+              {/* Embedded YouTube Video */}
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/njX2bu-_Vw4?si=cAWngxfde0vowaAG"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
             <div className="col-md-6 order-md-1">
               <h3 className="service-about-title1">We’re reinventing the space</h3>
               <p className="service-about-text">
-                Distinctively re-engineer revolutionary meta-services and premium. 
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+                Distinctively re-engineer revolutionary meta-services and premium.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.
               </p>
               <ul className="about-list">
                 <li>
-                  <strong className="prabhu-text">Full Services</strong> <br></br> <p className="service-list-text">Interactively procrastinate high-payoff content without <br></br>
-                  backward-compatible data.</p>
+                  <strong className="prabhu-text">Full Services</strong> <br />
+                  <p className="service-list-text">
+                    Interactively procrastinate high-payoff content without <br />
+                    backward-compatible data.
+                  </p>
                 </li>
                 <li>
-                  <strong className="prabhu-text">Safe Investments</strong> <br></br><p className="service-list-text">Interactively procrastinate high-payoff content without backward-<br></br>
-                  compatible data.</p>
+                  <strong className="prabhu-text">Safe Investments</strong> <br />
+                  <p className="service-list-text">
+                    Interactively procrastinate high-payoff content without backward-
+                    <br />
+                    compatible data.
+                  </p>
                 </li>
               </ul>
             </div>
