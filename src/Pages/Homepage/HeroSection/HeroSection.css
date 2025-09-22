@@ -11,6 +11,20 @@
 
 #hero-section {
   background-image: url("../../../assets/Rectangle2.png");
+   position: relative;
+}
+
+/* ✅ Gradient Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.85) 42.19%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 0;
 }
 
 /* Hero Text */
@@ -45,6 +59,13 @@
   color: #edeff6;
   margin-top: 20px;
 }
+
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* Bottom Wrapper (keeps toggle + search box together) */
 .bottom-wrapper {

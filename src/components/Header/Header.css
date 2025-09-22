@@ -33,6 +33,17 @@
   transition: color 0.3s ease;
 }
 
+/* Active link styling */
+.nav-link.active {
+  color: #6e00ff !important; /* Active link purple */
+  font-weight: 500;
+}
+
+/* Hover */
+.nav-link:hover {
+  color: #6e00ff !important;
+}
+
 .home-link {
   font-family: "Rubik", sans-serif;
   font-weight: 400; /* fixed invalid px */
@@ -170,4 +181,14 @@ body.menu-open {
 .get-started-btn:focus {
   outline: 2px solid #6e00ff;
   outline-offset: 2px;
+}
+
+
+/* Mobile Active State */
+@media (max-width: 992px) {
+  .nav-link.active {
+    background-color: rgba(110, 0, 255, 0.1);
+    color: #6e00ff !important; /* Active link purple */
+    border-radius: 4px;
+  }
 }

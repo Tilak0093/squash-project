@@ -6,6 +6,8 @@ const HeroSectionPage = () => {
       className="main-content d-flex flex-column align-items-center justify-content-center"
       id="hero-section"
     >
+       {/* Gradient Overlay */}
+      <div className="hero-overlay"></div>
       <div className="text-center text-white hero-text">
         {/* Hero Text */}
         <h1 className="hero-title">Discover Your New Home</h1>

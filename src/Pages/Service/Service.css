@@ -1,3 +1,10 @@
+:root {
+  --accent-purple: #6e00ff;
+  --muted: #6b6b6b;
+  --card-bg: #f3f3f3;
+  --green: #11b47f;
+}
+
 /* ---------- Hero / Breadcrumb Section ---------- */
 .property-hero {
   background-size: cover;
@@ -46,7 +53,7 @@
 }
 
 .breadcrumb-current {
-  color: #6e00ff;
+  color: var(--accent-purple);
   font-weight: 600;
 }
 
@@ -110,80 +117,22 @@
   text-align: left;
 }
 
-/* ---------- About Section ---------- */
-.service-about-title {
-  color: #000000 ;
-  font-size: 40px;
-  font-weight: 600;
-  font-family: 'Rubik', sans-serif;
-  font-style: semi-bold;
-  line-height: 50px;
-  letter-spacing: 0%;
-  margin-bottom: 15px;
-  font-family: 'Rubik', sans-serif;
-}
 
+/* ---------- About Section ---------- */
+.service-about-title,
 .service-about-title1 {
-  color: #000000 ;
-  font-size: 40px;
-  font-weight: 600;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
   font-family: 'Rubik', sans-serif;
-  font-style: semi-bold;
-  line-height: 50px;
-  letter-spacing: 0%;
-  margin-top: -1rem;
-  font-family: 'Rubik', sans-serif;
+  margin-bottom: 15px;
 }
 
 .service-about-text {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Rubik', sans-serif;
-  font-style: regular;
-  line-height: 26px;
-  letter-spacing: 2%;
-  margin-top: 35px;
-}
-
-.prabhu-text {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 600;
-  font-style: regular;
-  font-size: 24px;
-  line-height: 34px;
-  letter-spacing: 0%;
-  color: #000000;
-
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  border-radius: 12px; /* optional rounded corners */
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-}
-
-
-.service-list-text{
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-  font-style: regular;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 2%;
-  color: #7d7d7d;
-
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 0;
 }
 
 .about-list {
@@ -193,9 +142,141 @@
 }
 
 .about-list li {
-  margin-bottom: 10px;
-  font-size: 15px;
-  color: #444;
+  margin-bottom: 14px;
+}
+
+.prabhu-text {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.service-list-text {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin: 0;
+}
+
+/* ---------- VIDEO PREVIEW + PLAY BUTTON ---------- */
+.video-cta {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.video-cta img {
+  width: 695px ;
+  height: 434px;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* accessible button (visually centered) */
+.play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  color: #6e00ff;
+}
+
+/* Outer subtle ring that sits around the purple circle (matches the ref) */
+.play-ring {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 160ms ease;
+}
+
+/* inner purple circle */
+.play-inner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(110, 0, 255, 0.22);
+}
+
+/* triangle svg sizing */
+.play-inner svg.play-triangle {
+  width: 22px;
+  height: 22px;
+  transform: translateX(2px); /* visually center triangle */
+  color: #6e00ff;
+}
+
+/* ---------- VIDEO MODAL ---------- */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.video-modal-inner {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* close button */
+.video-modal-close {
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  background: #ffffff;
+  color: #111;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* responsive iframe container */
+.video-iframe {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.video-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
 }
 
 /* ---------- Stats Section ---------- */
@@ -225,7 +306,7 @@
 
 /* ---------- Team Section ---------- */
 .team-section .section-subtitle {
-  color: #6e00ff;
+  color: var(--accent-purple);
   font-weight: 600;
 }
 
@@ -233,4 +314,36 @@
   font-size: 32px;
   font-weight: 700;
   font-family: 'Rubik', sans-serif;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 991px) {
+  .service-card {
+    height: auto;
+    background-size: 35%;
+  }
+  .property-hero-title {
+    font-size: 36px;
+  }
+  .play-ring {
+    width: 86px;
+    height: 86px;
+  }
+  .play-inner {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-card {
+    padding: 20px;
+  }
+  .service-num {
+    width: 48px;
+    height: 48px;
+  }
+  .section-title {
+    font-size: 22px;
+  }
 }

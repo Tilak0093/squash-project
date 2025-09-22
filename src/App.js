@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/base.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 import HomePage from "./Pages/Homepage";           // ✅ default export
 import PropertiesPage from "./Pages/PropertiesPage/Property"; // ✅ fixed import
@@ -15,6 +17,7 @@ import Contact from "./Pages/Contact/Contact";
 import Service from "./Pages/Service/Service";
 import AboutUs from "./Pages/AboutUs/AboutUS";
 import Servicedetail from "./Pages/Servicedetail/Servicedetail";
+import BlogDetail from "./Pages/BlogDetail/BlogDetail";
 
 function App() {
   return (
@@ -28,6 +31,8 @@ function App() {
         <Route path="/Service" element={<Service />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/service-detail" element={<Servicedetail />} />
+        <Route path="/blog-detail" element={<BlogDetail />} />
+        <Route path="/property-detail" element={<PropertyDetail />} />
       </Routes>
       <Footer />
     </Router>
