@@ -18,6 +18,7 @@ import Service from "./Pages/Service/Service";
 import AboutUs from "./Pages/AboutUs/AboutUS";
 import Servicedetail from "./Pages/Servicedetail/Servicedetail";
 import BlogDetail from "./Pages/BlogDetail/BlogDetail";
+import PropertyDetail from "./Pages/PropertyDetail/PropertyDeatail";
 
 function App() {
   return (
