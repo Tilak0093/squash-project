@@ -1,0 +1,155 @@
+/* ---------- Hero / Breadcrumb Section ---------- */
+.property-hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  position: relative;
+}
+.property-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-inner {
+  padding: 30px 15px;
+}
+.property-hero-title {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin: 0;
+}
+.hero-breadcrumb {
+  margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.breadcrumb-home {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+.breadcrumb-separator {
+  margin: 0 6px;
+  vertical-align: middle;
+  height: 16px;
+}
+.breadcrumb-current {
+  color: #6e00ff;
+  font-weight: 600;
+}
+
+/* ---------- FAQ Section ---------- */
+.faq-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.faq-subtitle {
+  color: #6e00ff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.faq-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  color: #000;
+  margin-top: 15px;
+}
+
+/* Accordion Custom Styling */
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #e6e6e6;
+  background: transparent;
+}
+
+.accordion-button {
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: medium;
+  line-height: 38px;
+  letter-spacing: 0%;
+  color: #000000;
+  background: none;
+  box-shadow: none;
+  padding: 18px 0;
+  margin-bottom: 20px;
+}
+
+/* Remove Bootstrap arrows completely */
+.accordion-button::after {
+  display: none !important;
+}
+
+/* Active state color */
+.accordion-button:not(.collapsed) {
+  color: #000000;
+  background: none;
+  box-shadow: none;
+}
+
+.accordion-body {
+  padding: 0 0 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #474747;
+  line-height: 26px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+}
+
+/* ---------- FAQ Image ---------- */
+.faq-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 992px) {
+  .faq-section {
+    margin-top: 60px;
+  }
+  .faq-title {
+    font-size: 35px;
+  }
+  .faq-img {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion-button {
+    font-size: 16px;
+  }
+  .accordion-body {
+    font-size: 14px;
+  }
+  .faq-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-title {
+    font-size: 26px;
+  }
+  .faq-subtitle {
+    font-size: 16px;
+  }
+  .accordion-button {
+    font-size: 15px;
+  }
+  .accordion-body {
+    font-size: 13px;
+  }
+}

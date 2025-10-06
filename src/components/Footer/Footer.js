@@ -50,9 +50,9 @@ const Footer = () => {
           <div className="col-md-6 col-lg-2">
             <h4>Quick Links</h4>
             <ul className="footer-list">
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="/error">Terms and Conditions</a></li>
+              <li><a href="/coming-soon">Privacy Policy</a></li>
+              <li><a href="/faq">FAQs</a></li>
               <li><a href="#">Support Center</a></li>
             </ul>
           </div>
@@ -67,7 +67,7 @@ const Footer = () => {
                 placeholder="Get product updates"
               />
               <button className="btn">➜</button>
-            </div>
+            </div> 
           </div>
         </div>
 

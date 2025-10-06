@@ -35,6 +35,7 @@ import messageIcon from "../../assets/blogdetailmessage.png";
 
 function BlogDetail() {
   const [showVideo, setShowVideo] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <>
@@ -84,35 +85,60 @@ function BlogDetail() {
              donec duis ornare lorem Faucibus elit nisl, ac a massa aliquam nisl purus
             </p>
 
-            {/* ---------- Video Section ---------- */}
-            <div className="video-section">
-              {!showVideo ? (
-                <div
-                  className="video-thumbnail"
-                  style={{ backgroundImage: `url(${videoBg})` }}
-                >
-                  <button
-                    className="play-button"
-                    onClick={() => setShowVideo(true)}
-                    aria-label="Play video"
-                  >
-                    <img src={play} alt="play" />
-                  </button>
+                {/* ---------- Blog Section Video ---------- */}
+                <div className="blog-section-video">
+                  <div className="blog-section-video-cta" aria-hidden={isPlaying ? "true" : "false"}>
+                    {!isPlaying ? (
+                      <>
+                        <img
+                          src={videoBg}
+                          alt="video preview"
+                          className="blog-section-video-thumb"
+                        />
+                        <button
+                          className="blog-section-video-play-btn"
+                          onClick={() => setIsPlaying(true)}
+                          aria-label="Play video"
+                        >
+                          <span className="blog-section-video-ring" aria-hidden="true">
+                            <span className="blog-section-video-inner" aria-hidden="true">
+                              <svg
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="blog-section-video-triangle"
+                                role="img"
+                                aria-hidden="true"
+                              >
+                                <path d="M8 5v14l11-7z" fill="#ffffff" />
+                              </svg>
+                            </span>
+                          </span>
+                        </button>
+                      </>
+                    ) : (
+                      <div className="blog-section-video-modal">
+                        <div className="blog-section-video-modal-inner">
+                          <button
+                            className="blog-section-video-close"
+                            onClick={() => setIsPlaying(false)}
+                            aria-label="Close video"
+                          >
+                            ×
+                          </button>
+                          <div className="blog-section-video-iframe">
+                            <iframe
+                              src="https://www.youtube.com/embed/njX2bu-_Vw4?autoplay=1"
+                              title="YouTube video player"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowFullScreen
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              ) : (
-                <div className="video-iframe">
-                  <iframe
-                    width="100%"
-                    height="480"
-                    src= "https://www.youtube.com/embed/njX2bu-_Vw4?si=RTHLJjgJvSrg4ur_" 
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  />
-                </div>
-              )}
-            </div>
+
 
             {/* ---------- Rest of Blog (Quote + Image Strips) ---------- */}
             <h3 className="blog-subtitle">Give Your Dreams A Shape Of Reality</h3>
@@ -155,7 +181,7 @@ function BlogDetail() {
 
             <div className="blog-actions">
                
-              <div className="icons">
+              <div className="blog-icons">
                 <div className="decor-tags">
                    <p >#Decor</p>
                 <p>#Architecture</p>

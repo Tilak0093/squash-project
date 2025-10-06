@@ -196,7 +196,7 @@
 
 /* sale badge top-right */
 .sale-badge{
-  background: var(--green);
+  background: #00b753;
   color: white;
   padding: 16px 33px 16px 33px;
   border-radius: 5px;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./About.css"; // Ensure you have the CSS file for styling
 import House1 from "../../../assets/House1.png";
 import House2 from "../../../assets/House2.png";
 import House3 from "../../../assets/House3.png";

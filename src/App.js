@@ -19,6 +19,9 @@ import AboutUs from "./Pages/AboutUs/AboutUS";
 import Servicedetail from "./Pages/Servicedetail/Servicedetail";
 import BlogDetail from "./Pages/BlogDetail/BlogDetail";
 import PropertyDetail from "./Pages/PropertyDetail/PropertyDeatail";
+import FAQ from "./Pages/FAQ/FAQ";
+import ERROR from "./Pages/ERROR/ERROR";
+import COMINGSOON from "./Pages/COMINGSOON/COMINGSOON";
 
 function App() {
   return (
@@ -34,6 +37,10 @@ function App() {
         <Route path="/service-detail" element={<Servicedetail />} />
         <Route path="/blog-detail" element={<BlogDetail />} />
         <Route path="/property-detail" element={<PropertyDetail />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/error" element={<ERROR />} />
+        <Route path="/coming-soon" element={<COMINGSOON />} />
+        
       </Routes>
       <Footer />
     </Router>

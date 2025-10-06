@@ -116,7 +116,7 @@ const Service = () => {
                         <path d="M8 5v14l11-7z" fill="#ffffff" />
                       </svg>
                     </span>
-                  </span>
+                  </span> 
                 </button>
               </div>
             </div>

@@ -44,7 +44,6 @@
   max-width: 447px !important;
   max-height: 512px !important;
   margin-top: 10px;
-  padding: 20px !important;
 }
 .latest-card:hover {
   transform: translateY(-5px);

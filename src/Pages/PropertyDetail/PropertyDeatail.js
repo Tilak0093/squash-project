@@ -7,10 +7,10 @@ import Diamond from "../../assets/propertydiamond.png"
 
 // info icons
 import Location from "../../assets/Location.png";
-import propertybath from "../../assets/propertybath.png";
-import propertybed from "../../assets/propertybed.png";
-import propertysqft from "../../assets/propertysqft.png";
-import propertydetailpark from "../../assets/propertydetailpark.png"
+import propertydetailbath from "../../assets/propertydetailbath.png";
+import propertydetailbed from "../../assets/propertydetailbed.png";
+import propertydetailsqft from "../../assets/propertydetailsqft.png";
+import propertydetailpark from "../../assets/propertydetailpark.png";
 import share from "../../assets/share.png";
 import heart from "../../assets/Heart.png";
 import plus from "../../assets/Plus.png";
@@ -26,6 +26,8 @@ import prop6 from"../../assets/propertydetail16.jpg"
 
 // agent
 import agent from "../../assets/propertydetailagent.jpg"
+import agentmail from "../../assets/agentmail.svg"
+import agentphone from "../../assets/agentphone.svg"
 
 //blog image
 import blog1 from "../../assets/blogdetail2.jpg";
@@ -57,6 +59,7 @@ import comment from "../../assets/propertydetailcomment.png"
 import profile1 from "../../assets/commentsprofile1.png"
 import profile2 from "../../assets/commentsprofile2.png"
 import profile3 from "../../assets/commentsprofile3.png"
+import { ImOpt } from "react-icons/im";
 
 export default function PropertyDetail() {
   // small state for demo forms (no backend)
@@ -125,12 +128,31 @@ export default function PropertyDetail() {
                         <img src={plus} alt="plus" title="More" className="share-img-"/>
                       </div>
                   </div>
-                  <div className="stats">
-                    <div className="stat"><img src={propertybed} alt="beds" /> <span></span></div>
-                    <div className="stat"><img src={propertybath} alt="baths" /> <span></span></div>
-                    <div className="stat"><img src={propertydetailpark} alt="parking" /> <span></span></div>
-                    <div className="stat"><img src={propertysqft} alt="sqft" /> <span></span></div>
-                  </div>
+                    <div className="property-features">
+                      <div className="feature-card">
+                        <img src={propertydetailbed} alt="bed" />
+                        <span className="divider">|</span>
+                        <p className="stats-paragraph">3 Beds</p>
+                      </div>
+
+                      <div className="feature-card">
+                        <img src={propertydetailbath} alt="bath" />
+                        <span className="divider">|</span>
+                        <p className="stats-paragraph">2 Baths</p>
+                      </div>
+
+                      <div className="feature-card">
+                        <img src={propertydetailpark} alt="parking" />
+                        <span className="divider">|</span>
+                        <p className="stats-paragraph">1 Parking</p>
+                      </div>
+
+                      <div className="feature-card">
+                        <img src={propertydetailsqft} alt="sqft" />
+                        <span className="divider">|</span>
+                        <p className="stats-paragraph">120sqft</p>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -247,9 +269,7 @@ export default function PropertyDetail() {
                         <div>
                           <strong>Dianne Russell</strong>
                           <div className="comment-meta">March 10, 2023 | 10:30 am</div>
-                        </div>
-                      </div>
-                      <p>
+                          <p>
                         Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi
                         tincidunt ornare massa. Tristique senectus et netus et. Iaculis eu non diam.
                       </p>
@@ -263,6 +283,9 @@ export default function PropertyDetail() {
                         <button><img src={dislike} alt="dislike" /> Dislike</button>
                         <button><img src={comment} alt="reply" /> Reply</button>
                       </div>
+                        </div>
+                      </div>
+                      
                     </div>
 
                     {/* Comment 2 */}
@@ -272,9 +295,7 @@ export default function PropertyDetail() {
                         <div>
                           <strong>Arlene McCoy</strong>
                           <div className="comment-meta">March 10, 2023 | 11:30 am</div>
-                        </div>
-                      </div>
-                      <p>
+                          <p>
                         Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi
                         tincidunt ornare massa. Tristique senectus et netus et. Iaculis eu non diam
                         phasellus. Nullam ac tortor vitae purus. Eget nullam non nisi est sit amet faci.
@@ -283,6 +304,8 @@ export default function PropertyDetail() {
                         <button className="like"><img src={like} alt="like" /> Like</button>
                         <button><img src={dislike} alt="dislike" /> Dislike</button>
                         <button><img src={comment} alt="reply" /> Reply</button>
+                      </div>
+                        </div>
                       </div>
                     </div>
 
@@ -293,9 +316,7 @@ export default function PropertyDetail() {
                         <div>
                           <strong>Annette Black</strong>
                           <div className="comment-meta">March 10, 2023 | 11:30 am</div>
-                        </div>
-                      </div>
-                      <p>
+                           <p>
                         Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi
                         tincidunt ornare massa. Tristique senectus et netus et. Iaculis eu non diam
                         phasellus. Nullam ac tortor vitae purus. Eget nullam non nisi est sit amet facilisis.
@@ -304,6 +325,8 @@ export default function PropertyDetail() {
                         <button className="like"><img src={like} alt="like" /> Like</button>
                         <button><img src={dislike} alt="dislike" /> Dislike</button>
                         <button><img src={comment} alt="reply" /> Reply</button>
+                      </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -364,8 +387,14 @@ export default function PropertyDetail() {
                 searching for a property with in the customer's 
                 needed areas.</p>
               <div className="agent-contact">
-                <a href="mailto:anne.hathaway@email.com">anne.hathaway@email.com</a>
-                <a href="tel:+17195041984">+1 719-504-1984</a>
+                <div className="d-flex align-items-center justify-content-center px-4 gap-4" >
+                  <img src={agentmail} alt="email" className="agent-icon"/>
+                  <a href="mailto:anne.hathaway@email.com">anne.hathaway@email.com</a>
+                </div>
+                <div className="d-flex align-items-center justify-content-center px-4 gap-4">
+                  <img src={agentphone} alt="phone" className="agent-icon"/>
+                  <a href="tel:+17195041984">+1 719-504-1984</a>
+                </div>
               </div>
             </div>
 

@@ -1,0 +1,176 @@
+/* Google Fonts (add in index.html if not added)
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+*/
+
+:root {
+  --purple: #6e00ff;
+  --green: #17b55b;
+  --text: #111;
+  --muted: #666;
+}
+
+/* ---------- Hero / Breadcrumb Section ---------- */
+.property-hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  position: relative;
+}
+.property-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-inner {
+  padding: 30px 15px;
+}
+.property-hero-title {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+}
+.hero-breadcrumb {
+  margin-top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.breadcrumb-home {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+.breadcrumb-separator {
+  margin: 0 8px;
+  vertical-align: middle;
+  height: 16px;
+}
+.breadcrumb-current {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+/* ---------- Error Section ---------- */
+.error-section {
+  background: #fff;
+}
+
+.error-img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.error-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 54px;
+  line-height: 64px;
+  letter-spacing: 0%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.error-text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  color: #474747;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  margin: 0 auto 25px;
+  margin-bottom: 40px;
+}
+
+.btn-go-home {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 25px 12px 25px;
+  gap: 10px !important;
+  border-radius: 5px;
+  background: #00b753;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  transition: 0.2s ease-in-out;
+}
+.btn-go-home:hover {
+  background: #14a54f;
+  transform: translateY(-2px);
+}
+
+/* ---------- Responsive Media Queries ---------- */
+
+/* Large tablets / small desktops */
+@media (max-width: 991px) {
+  .property-hero-title {
+    font-size: 42px;
+  }
+  .error-img {
+    max-width: 400px;
+  }
+  .error-title {
+    font-size: 28px;
+  }
+  .error-text {
+    font-size: 15px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .property-hero {
+    min-height: 250px;
+  }
+  .property-hero-title {
+    font-size: 36px;
+  }
+  .hero-breadcrumb {
+    font-size: 15px;
+  }
+  .error-img {
+    max-width: 320px;
+  }
+  .error-title {
+    font-size: 24px;
+  }
+  .error-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+  .property-hero {
+    min-height: 220px;
+  }
+  .property-hero-title {
+    font-size: 30px;
+  }
+  .hero-breadcrumb {
+    font-size: 13px;
+  }
+  .error-section {
+    padding: 60px 10px;
+  }
+  .error-img {
+    max-width: 260px;
+  }
+  .error-title {
+    font-size: 22px;
+  }
+  .btn-go-home {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
