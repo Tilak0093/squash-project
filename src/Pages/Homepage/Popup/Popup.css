@@ -1,0 +1,193 @@
+:root {
+  --popup-bg: #f7ddff;
+  --green: #00b753;
+}
+
+/* Overlay covers entire screen */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 15px;
+}
+
+/* Main popup container */
+.popup-container {
+  background-color: var(--popup-bg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 1294px;
+  height: 720px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Close button (green circle) */
+.popup-close {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: var(--green);
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+  z-index: 10;
+}
+.popup-close:hover {
+  transform: scale(1.1);
+}
+
+/* Left section */
+.popup-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-left-image {
+  width: 100%;
+  max-width: 500px;
+  margin-left: -60px;
+  margin-top: 30px;
+  object-fit: contain;
+}
+
+/* Right section */
+.popup-content {
+  padding: 40px 60px;
+}
+.popup-title {
+  font-family: 'Rubik', sans-serif;
+  font-style: bold;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.popup-title span {
+  font-weight: 800;
+}
+.popup-subtitle {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400 ; 
+  line-height: 26px;
+  letter-spacing: 0%;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #474747;
+}
+
+/* Subscribe form */
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+.popup-input {
+  flex: 1;
+  border-radius: 10px;
+  padding: 14px 20px;
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  min-width: 357px;
+  min-height: 50px;
+}
+.subscribes-btn {
+  background: var(--green);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px 12px 25px; 
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 183, 83, 0.4);
+  transition: all 0.25s ease;
+  position: absolute;
+  bottom:8rem;
+  right :28.7rem;
+
+}
+.subscribes-btn:hover {
+  background: #009f48;
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   RESPONSIVENESS
+========================== */
+
+/* Large tablets and below */
+@media (max-width: 1400px) {
+  .popup-container {
+    width: 95%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .popup-left-image {
+    max-width: 420px;
+    margin-left: 0;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .popup-container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  .popup-content {
+    padding: 30px;
+  }
+  .popup-left-image {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .subscribe-input,
+  .subscribe-btn {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .popup-container {
+    width: 90%;
+    height: auto;
+    border-radius: 16px;
+  }
+  .popup-title {
+    font-size: 2rem;
+  }
+  .popup-subtitle {
+    font-size: 0.95rem;
+  }
+  .popup-close {
+    width: 38px;
+    height: 38px;
+    top: -15px;
+    right: -15px;
+  }
+}

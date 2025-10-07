@@ -7,6 +7,8 @@ import Neighborhood from "../Neighborhood/Neighborhood";
 import Team from "../Team/Team";
 import Blog from "../Blog/Blog";
 import Subscribe from "../Subscribe/Subscribe";
+import Popup  from "../Popup/Popup";
+
 const MainContent = () => {
   return (
     <div className="main-content">
@@ -38,6 +40,9 @@ const MainContent = () => {
 
       <div className="container">
         <Subscribe />
+      </div>
+      <div className="container">
+        <Popup />
       </div>
     </div>
   );
