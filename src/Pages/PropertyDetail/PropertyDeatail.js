@@ -178,7 +178,7 @@ export default function PropertyDetail() {
 
 
 
-            <div className="d-flex container-fluid gap-4 w-100">
+            <div className="agent container-fluid gap-4 w-100">
               <div>
             
             <section className="about-property">
@@ -257,80 +257,114 @@ export default function PropertyDetail() {
               </div>
             </section>
 
-                {/* Comments */}
-                <section className="comments">
-                  <h3 className="comments-title">Comments</h3>
+                {/* ---------- Comments Section ---------- */}
+                <section className="comments container my-5">
+                  <h3 className="comments-title mb-4">Comments</h3>
 
                   <div className="comments-box">
-                    {/* Comment 1 */}
-                    <div className="comment-item">
-                      <div className="comment-head">
-                        <img src={profile1} alt="user" className="avatar" />
-                        <div>
+                    {/* ---------- Comment 1 ---------- */}
+                    <div className="comment-item mb-4 p-3 border rounded">
+                      <div className="row g-3 align-items-start">
+                        <div className="col-md-2 col-3 text-center">
+                          <img src={profile1} alt="user" className="avatar img-fluid rounded-circle" />
+                        </div>
+                        <div className="col-md-10 col-9">
                           <strong>Dianne Russell</strong>
-                          <div className="comment-meta">March 10, 2023 | 10:30 am</div>
-                          <p>
-                        Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi
-                        tincidunt ornare massa. Tristique senectus et netus et. Iaculis eu non diam.
-                      </p>
-                      <div className="comment-images">
-                        <img src={prop1} alt="c1" />
-                        <img src={prop2} alt="c2" />
-                        <img src={prop3} alt="c3" />
-                      </div>
-                      <div className="comment-actions">
-                        <button className="like"><img src={like} alt="like" /> Like</button>
-                        <button><img src={dislike} alt="dislike" /> Dislike</button>
-                        <button><img src={comment} alt="reply" /> Reply</button>
-                      </div>
+                          <div className="comment-meta text-muted small mb-2">
+                            March 10, 2023 | 10:30 am
+                          </div>
+                          <p className="mb-3">
+                            Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi tincidunt
+                            ornare massa. Tristique senectus et netus et. Iaculis eu non diam.
+                          </p>
+
+                          <div className="comment-images mb-3 d-flex flex-wrap gap-2">
+                            <img src={prop1} alt="c1" className="img-fluid rounded" style={{ width: "80px" }} />
+                            <img src={prop2} alt="c2" className="img-fluid rounded" style={{ width: "80px" }} />
+                            <img src={prop3} alt="c3" className="img-fluid rounded" style={{ width: "80px" }} />
+                          </div>
+
+                          <div className="comment-actions d-flex flex-wrap gap-3">
+                            <button className="btn btn-sm btn-outline-secondary like">
+                              <img src={like} alt="like" className="me-1" /> Like
+                            </button>
+                            <button className="btn btn-sm btn-outline-secondary">
+                              <img src={dislike} alt="dislike" className="me-1" /> Dislike
+                            </button>
+                            <button className="btn btn-sm btn-outline-secondary">
+                              <img src={comment} alt="reply" className="me-1" /> Reply
+                            </button>
+                          </div>
                         </div>
                       </div>
-                      
                     </div>
 
-                    {/* Comment 2 */}
-                    <div className="comment-item">
-                      <div className="comment-head">
-                        <img src={profile2} alt="user2" className="avatar" />
-                        <div>
+                    {/* ---------- Comment 2 ---------- */}
+                    <div className="comment-item mb-4 p-3 border rounded">
+                      <div className="row g-3 align-items-start">
+                        <div className="col-md-2 col-3 text-center">
+                          <img src={profile2} alt="user2" className="avatar img-fluid rounded-circle" />
+                        </div>
+                        <div className="col-md-10 col-9">
                           <strong>Arlene McCoy</strong>
-                          <div className="comment-meta">March 10, 2023 | 11:30 am</div>
-                          <p>
-                        Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi
-                        tincidunt ornare massa. Tristique senectus et netus et. Iaculis eu non diam
-                        phasellus. Nullam ac tortor vitae purus. Eget nullam non nisi est sit amet faci.
-                      </p>
-                      <div className="comment-actions">
-                        <button className="like"><img src={like} alt="like" /> Like</button>
-                        <button><img src={dislike} alt="dislike" /> Dislike</button>
-                        <button><img src={comment} alt="reply" /> Reply</button>
-                      </div>
+                          <div className="comment-meta text-muted small mb-2">
+                            March 10, 2023 | 11:30 am
+                          </div>
+                          <p className="mb-3">
+                            Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi tincidunt
+                            ornare massa. Tristique senectus et netus et. Iaculis eu non diam phasellus. Nullam ac
+                            tortor vitae purus. Eget nullam non nisi est sit amet faci.
+                          </p>
+
+                          <div className="comment-actions d-flex flex-wrap gap-3">
+                            <button className="btn btn-sm btn-outline-secondary like">
+                              <img src={like} alt="like" className="me-1" /> Like
+                            </button>
+                            <button className="btn btn-sm btn-outline-secondary">
+                              <img src={dislike} alt="dislike" className="me-1" /> Dislike
+                            </button>
+                            <button className="btn btn-sm btn-outline-secondary">
+                              <img src={comment} alt="reply" className="me-1" /> Reply
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Comment 3 */}
-                    <div className="comment-item">
-                      <div className="comment-head">
-                        <img src={profile3} alt="user3" className="avatar" />
-                        <div>
+                    {/* ---------- Comment 3 ---------- */}
+                    <div className="comment-item mb-4 p-3 border rounded">
+                      <div className="row g-3 align-items-start">
+                        <div className="col-md-2 col-3 text-center">
+                          <img src={profile3} alt="user3" className="avatar img-fluid rounded-circle" />
+                        </div>
+                        <div className="col-md-10 col-9">
                           <strong>Annette Black</strong>
-                          <div className="comment-meta">March 10, 2023 | 11:30 am</div>
-                           <p>
-                        Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi
-                        tincidunt ornare massa. Tristique senectus et netus et. Iaculis eu non diam
-                        phasellus. Nullam ac tortor vitae purus. Eget nullam non nisi est sit amet facilisis.
-                      </p>
-                      <div className="comment-actions">
-                        <button className="like"><img src={like} alt="like" /> Like</button>
-                        <button><img src={dislike} alt="dislike" /> Dislike</button>
-                        <button><img src={comment} alt="reply" /> Reply</button>
-                      </div>
+                          <div className="comment-meta text-muted small mb-2">
+                            March 10, 2023 | 11:30 am
+                          </div>
+                          <p className="mb-3">
+                            Mi quis hendrerit dolor magna eget est lorem. Velit sed ullamcorper morbi tincidunt
+                            ornare massa. Tristique senectus et netus et. Iaculis eu non diam phasellus. Nullam ac
+                            tortor vitae purus. Eget nullam non nisi est sit amet facilisis.
+                          </p>
+
+                          <div className="comment-actions d-flex flex-wrap gap-3">
+                            <button className="btn btn-sm btn-outline-secondary like">
+                              <img src={like} alt="like" className="me-1" /> Like
+                            </button>
+                            <button className="btn btn-sm btn-outline-secondary">
+                              <img src={dislike} alt="dislike" className="me-1" /> Dislike
+                            </button>
+                            <button className="btn btn-sm btn-outline-secondary">
+                              <img src={comment} alt="reply" className="me-1" /> Reply
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </section>
+
 
 
             <form className="review-form" onSubmit={handleReviewSubmit}>

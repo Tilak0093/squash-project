@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./About.css"; // Ensure you have the CSS file for styling
 import House1 from "../../../assets/House1.png";

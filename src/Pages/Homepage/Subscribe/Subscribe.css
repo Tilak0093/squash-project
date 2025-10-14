@@ -132,3 +132,34 @@
     filter: none;
   }
 }
+
+
+@media (max-width:320px) {
+  .subscribe-card {
+    min-width: 100% !important;
+    padding: 15px;
+  }
+
+  .subscribe-title {
+    width: 100%;
+    font-size: 28px;
+    line-height: 34px;
+    position: relative;
+    top: 20px;
+    left: 0;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-input {
+    min-width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+
+  .subscribe-btn {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}

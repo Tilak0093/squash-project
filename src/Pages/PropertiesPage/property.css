@@ -107,27 +107,28 @@
 }
 
 /* pills */
-.control-pill select.form-select {
+.forms-select {
+  background-color: #00b753; /* keep background transparent */
+  color: white; /* text color */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border-radius: 50px;
   padding: 4px 12px;
-  height: 40px;
-  width: 78px;
   border: none;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   font-weight: 600;
-}
-
-/* Custom white dropdown arrow */
-.control-pill select.form-select {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'><path d='M1.5 5.5l6.5 6 6.5-6'/></svg>");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 14px 14px;
   padding-right: 2rem;
   color: #fff; /* text white inside */
+}
+
+/* Custom white dropdown arrow */
+.control-pill select.form-select {
+ 
 }
 
 
@@ -202,12 +203,9 @@
   border-radius: 5px;
   font-weight: 600;
   font-size: 20px;
-  max-width: 145px;
-  max-height: 56px;
   line-height: 118%;
   gap: 10px;
   letter-spacing: 0%;
-  position: absolute;
   right: 22px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -260,16 +258,13 @@
 /* features boxes */
 .card-features{
   margin-top: auto;
+  display: flex;
 }
 .feature-box img{
   width: 119px;
   height: 50px;
 }
 
-/* small responsive tweaks for features layout */
-.card-features .feature-box + .feature-box{
-  margin-left: 8px;
-}
 
 /* ---------- Pagination ---------- */
 .custom-pagination {
@@ -298,7 +293,7 @@
 /* active page */
 .custom-pagination .page-item .page-link.active,
 .custom-pagination .page-item .page-link:focus {
-  background: var(--green);
+  background: #00b753;
   color: white;
   border-radius: 3px;
   box-shadow: none;
@@ -317,6 +312,11 @@
   margin-top: 20px;
 }
 
+.block{
+  display: flex;
+  gap: 105px;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 991px){
   .hero-title{ font-size: 30px; }
@@ -328,4 +328,21 @@
   .control-pill { display:block; margin-top:8px; }
   .card-title{ font-size: 15px; }
   .feature-box{ min-width: 78px; padding: 6px 8px; font-size: 12px; }
+}
+
+@media (max-width:320px){
+  .block{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap :30px;
+  }
+  .card-features {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .custom-pagination {
+    gap: 0px;
+  }
 }

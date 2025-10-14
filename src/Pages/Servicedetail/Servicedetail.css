@@ -178,3 +178,10 @@
   background: #00b753;   /* purple bg */
   color: #ffffff;        /* arrow white */
 }
+
+
+@media (max-width:320px) {
+  .servicedetail-title {
+    margin-left: -60px !important;
+  }
+}

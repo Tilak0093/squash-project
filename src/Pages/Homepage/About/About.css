@@ -4,10 +4,6 @@
   font-weight: 600;        /* bold */
   color: #000000;             /* dark color */
   margin-bottom: 1rem;
-  width: 685px;
-  height: 94px;
-  top: 1109px;
-  left: 260px;
   font-family: 'Rubik', sans-serif;
   font-style: semibold;
   line-height: 54px;
@@ -24,9 +20,6 @@
   text-transform: uppercase;
   color: #6E00FF;          /* purple shade */
   letter-spacing: 1px;
-  width: 162px;
-  min-height: 30px;
-  max-height: 30px;
   top: 1059px;
   left: 260px;
   gap: 20px;
@@ -46,9 +39,6 @@
   color: #474747;   /* soft gray */
   line-height: 26px;
   margin-bottom: 1rem;
-  width: 685px;
-  min-height: 52px;
-  max-height: 52px;
   top: 1233px;
   left: 260px;
   font-family: 'Rubik', sans-serif;
@@ -219,21 +209,26 @@
 /* Decorative Circles */
 .circle {
   position: absolute;
-  width: 60px;
-  height: 60px;
   object-fit: contain;
 }
 
 .circle1 {
   top: 8%;
   right: -100px;
-  width:190.06
 }
 
 .circle2 {
   bottom: -50px;
   left: 360px;
 }
+
+/* Custom container max-width override */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px !important;
+  }
+}
+
 
 /* Large Tablets (<= 991px) */
 @media (max-width: 991px) {
@@ -267,9 +262,21 @@
   }
 }
 
-/* Custom container max-width override */
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1400px !important;
+@media (max-width: 320px) {
+  .about-card {
+    width: 100%;  /* full width on very small screens */
+    height: 100%;
+  }
+  .about-card-description {
+    color: #6c757d;
+    font-size: 12px;
+    margin: 0;
+  }
+  .about-card-title-purple {
+    font-size: 17px;
+  }
+  .about-card-title-dark {
+    font-size: 17px;
   }
 }
+

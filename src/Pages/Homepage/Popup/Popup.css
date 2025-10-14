@@ -191,3 +191,10 @@
     right: -15px;
   }
 }
+
+@media (max-width: 320px) {
+  .popup-input {
+    min-width: none !important;
+    min-height: none !important;
+  }
+}

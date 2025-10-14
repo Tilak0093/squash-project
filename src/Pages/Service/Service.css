@@ -344,3 +344,10 @@
     font-size: 22px;
   }
 }
+
+
+@media (max-width:320px) {
+  .service-title {
+    margin-left: -65px !important;
+  }
+}

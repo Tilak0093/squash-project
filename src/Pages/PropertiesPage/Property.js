@@ -18,10 +18,11 @@ import propertybath from "../../assets/propertybath.png";
 import propertybed from "../../assets/propertybed.png";
 import propertysqft from "../../assets/propertysqft.png";
 
-import  Button1  from "../../assets/propertybutton1.png";
-import  Button2  from "../../assets/propertybutton2.png";
-import  Button3  from "../../assets/propertybutton3.png";
-import  Button4  from "../../assets/propertybutton4.png";
+import Button1 from "../../assets/propertybutton1.png";
+import Button2 from "../../assets/propertybutton2.png";
+import Button3 from "../../assets/propertybutton3.png";
+import Button4 from "../../assets/propertybutton4.png";
+
 const cards = [
   { id: 1, img: propertycard1 },
   { id: 2, img: propertycard2 },
@@ -35,21 +36,21 @@ const cards = [
 ];
 
 const Property = () => {
-  const [viewMode, setViewMode] = useState("grid-4"); // default to 4-column
+  const [viewMode, setViewMode] = useState("grid-3");
   const [perPage, setPerPage] = useState(12);
   const [sortBy, setSortBy] = useState("Featured");
 
   return (
     <div className="property-page">
-      {/* Breadcrumb / Hero */}
+      {/* ---------- Hero / Breadcrumb ---------- */}
       <section
-        className="property-hero"
+        className="property-hero d-flex align-items-center justify-content-center text-center"
         style={{ backgroundImage: `url(${propertybg})` }}
       >
-        <div className="overlay">
-          <div className="container text-center hero-inner">
-            <h1 className="property-hero-title">Property</h1>
-            <div className="hero-breadcrumb">
+        <div className="overlay w-100 py-5">
+          <div className="container">
+            <h1 className="property-hero-title mb-3">Property</h1>
+            <div className="hero-breadcrumb d-flex justify-content-center align-items-center gap-2">
               <a href="/" className="breadcrumb-home">Home</a>
               <img src={Diamond} alt="diamond" className="breadcrumb-separator" />
               <span className="breadcrumb-current">Property</span>
@@ -58,55 +59,56 @@ const Property = () => {
         </div>
       </section>
 
-      {/* Controls */}
-      <section className="container property-controls">
-        <div className="row align-items-center">
-          <div className="col-md-6">
-            <div className="view-as">
-              <span className="view-label">View As</span>
-              
+      {/* ---------- Controls Section ---------- */}
+      <section className="container my-4 property-controls">
+        <div className="row align-items-center g-3">
+          {/* Left: View Mode Buttons */}
+          <div className="col-12 col-md-6">
+            <div className="view-as d-flex align-items-center flex-wrap gap-2">
+              <span className="view-label me-2 fw-semibold">View As:</span>
+
               <button
-              className={`view-btn ${viewMode === "grid-4" ? "active" : ""}`}
-              onClick={() => setViewMode("grid-4")}
-              title="4-column grid"
+                className={`view-btn btn ${viewMode === "grid-4" ? "active" : ""}`}
+                onClick={() => setViewMode("grid-4")}
+                title="4-column grid"
               >
                 <img src={Button1} alt="4-column grid" className="view-icon" />
               </button>
-              
+
               <button
-              className={`view-btn ${viewMode === "grid-3" ? "active" : ""}`}
-              onClick={() => setViewMode("grid-3")}
-              title="3-column grid"
+                className={`view-btn btn ${viewMode === "grid-3" ? "active" : ""}`}
+                onClick={() => setViewMode("grid-3")}
+                title="3-column grid"
               >
                 <img src={Button2} alt="3-column grid" className="view-icon" />
               </button>
-              
+
               <button
-              className={`view-btn ${viewMode === "grid-2" ? "active" : ""}`}
-              onClick={() => setViewMode("grid-2")}
-              title="2-column grid"
+                className={`view-btn btn ${viewMode === "grid-2" ? "active" : ""}`}
+                onClick={() => setViewMode("grid-2")}
+                title="2-column grid"
               >
                 <img src={Button3} alt="2-column grid" className="view-icon" />
-                </button>
-                
-                <button
-                className={`view-btn ${viewMode === "list" ? "active" : ""}`}
+              </button>
+
+              <button
+                className={`view-btn btn ${viewMode === "list" ? "active" : ""}`}
                 onClick={() => setViewMode("list")}
                 title="list view"
-                >
-                  <img src={Button4} alt="list view" className="view-icon" />
-                  </button>
-                </div>
-              </div>
+              >
+                <img src={Button4} alt="list view" className="view-icon" />
+              </button>
+            </div>
+          </div>
 
+ {/* Right: Filters */}
+          <div className="col-12 col-md-6 d-flex flex-wrap justify-content-md-end align-items-center gap-3">
+            <span className="showing ">Showing 1–12 Results</span>
 
-          {/* right controls */}
-          <div className="col-md-6 text-md-end mt-3 mt-md-0 d-flex gap-3 align-items-center justify-content-end">
-            <span className="showing">Showing 1-12 Results</span>
+            <div className="d-flex align-items-center gap-2">
 
-            <div className="control-pill ms-3 d-inline-block">
               <select
-                className="form-select perpage-select"
+                className="forms-select form-select-sm perpage-select"
                 value={perPage}
                 onChange={(e) => setPerPage(Number(e.target.value))}
               >
@@ -115,10 +117,11 @@ const Property = () => {
                 <option value={48}>48</option>
               </select>
             </div>
-            <span className="showing">Sort BY </span>
-            <div className="control-pill ms-2 d-inline-block">
+
+            <div className="d-flex align-items-center gap-2">
+              <label className=" mb-0">Sort By:</label>
               <select
-                className="form-select sortby-select"
+                className="forms-select form-select-sm sortby-select"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
               >
@@ -132,45 +135,35 @@ const Property = () => {
         </div>
       </section>
 
-      {/* Cards */}
-      <section className="container property-cards mt-4 mb-5">
-        <div className="row">
+
+
+      {/* ---------- Property Cards ---------- */}
+      <section className="container property-cards my-5">
+        <div className="row g-4">
           {cards.map((c) => (
-            <div
-              key={c.id}
-              className={
-                viewMode === "grid-4"
-                  ? "col-lg-3 col-md-4 col-sm-6 mb-4"
-                  : viewMode === "grid-3"
-                  ? "col-lg-4 col-md-6 mb-4"
-                  : viewMode === "grid-2"
-                  ? "col-lg-6 col-md-6 mb-4"
-                  : "col-12 mb-4"
-              }
-            >
+            <div key={c.id} className="col-sm-12 col-md-6 col-lg-4">
               <div className="card property-card h-100">
                 <div className="card-img-wrap">
                   <img src={c.img} className="card-img-top" alt="property" />
                 </div>
 
-                <div className="card-body">
-                  
-                  <div className="price-text">
-                    <span className="price-amount">$4500</span>
-                    <span className="price-suffix">/Rent</span>
+                <div className="card-body d-flex flex-column justify-content-between">
+                  <div className="block d-flex justify-content-between align-items-center mb-2">
+                    <div className="price-text">
+                      <span className="price-amount">$4500</span>
+                      <span className="price-suffix">/Rent</span>
+                    </div>
+                    <div className="sale-badge">For Sale</div>
                   </div>
-                  <div className="sale-badge">For Sale</div>
 
                   <h5 className="property-card-title">Comfortable Apartment</h5>
 
-                  <p className="card-location">
-                    <img src={Location} alt="loc" />
-                    <span className="loc-text">
-                      709 West Drive Chicago, IL 60606
-                    </span>
+                  <p className="card-location d-flex align-items-center gap-2">
+                    <img src={Location} alt="loc" className="loc-icon" />
+                    <span className="loc-text">709 West Drive Chicago, IL 60606</span>
                   </p>
 
-                  <div className="card-features d-flex gap-2">
+                  <div className="card-features d-flex gap-3 mt-2">
                     <div className="feature-box">
                       <img src={propertybed} alt="beds" />
                     </div>
@@ -187,11 +180,11 @@ const Property = () => {
           ))}
         </div>
 
-        {/* Pagination */}
-        <div className="row">
-          <div className="col-12 d-flex justify-content-center mt-4">
+        {/* ---------- Pagination ---------- */}
+        <div className="row mt-5">
+          <div className="col-12 d-flex justify-content-center">
             <nav aria-label="Page navigation example">
-              <ul className="pagination custom-pagination">
+              <ul className="pagination custom-pagination mb-0">
                 <li className="page-item">
                   <a className="page-link" href="#" aria-label="Previous">
                     <span aria-hidden="true">‹</span>
@@ -206,7 +199,7 @@ const Property = () => {
                 <li className="page-item">
                   <a className="page-link" href="#">3</a>
                 </li>
-                <li className="page-item">
+                <li className="page-item disabled">
                   <a className="page-link" href="#">...</a>
                 </li>
                 <li className="page-item">
