@@ -1,38 +1,31 @@
 /* Section styling */
 .choose-section {
   background-color: #f9f9f9;
+  padding: 50px 0;
 }
 
 .choose-subtitle {
   color: #6e00ff;
   font-weight: 600;
   letter-spacing: 0%;
-  min-height: 30px;
-  max-height: 30px;
-  gap: 20px;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-style: medium;
   font-size: 20px;
   line-height: 30px;
-  align-items: center;
-  margin-top: 110px;
+  margin-bottom: 15px;
 }
 
 .choose-title {
   font-size: 2rem;
   font-weight: 600;
   color: #000000;
-  height: 105px;
   font-family: 'Rubik', sans-serif;
   font-style: semibold;
   font-size: 47px;
   line-height: 54px;
   letter-spacing: 0%;
-  align-items: center;
-  margin-top: 35px;
-  margin-left: -10px;
-
+  margin-bottom: 30px;
 }
 
 /* Card styling */
@@ -42,20 +35,25 @@
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-#chooseID {
-  margin-left: -40px;
-  margin-top: 40px
+
+.choose-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .choose-card-body {
   padding: 15px;
   position: relative;
   text-align: start;
   min-height: 130px;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .choose-card-title {
@@ -68,6 +66,7 @@
   font-size: 24px;
   line-height: 34px;
   letter-spacing: 0%;
+  margin-bottom: 10px;
 }
 
 .choose-card-text {
@@ -78,10 +77,11 @@
   font-weight: 400;
   font-style: regular;
   letter-spacing: 0%;
-
+  margin-bottom: 15px;
+  flex: 1;
 }
 
-.choose-second-title{
+.choose-second-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: #000000;
@@ -91,10 +91,10 @@
   font-size: 24px;
   line-height: 34px;
   letter-spacing: 0%;
-
+  margin-bottom: 10px;
 }
 
-.choose-second-text{
+.choose-second-text {
   font-size: 16px;
   color: #474747;
   line-height: 26px;
@@ -102,17 +102,22 @@
   font-weight: 400;
   font-style: regular;
   letter-spacing: 0%;
-
+  margin-bottom: 10px;
 }
-
 
 /* Images */
 .choose-img-top {
   max-height: 160px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .choose-img-side {
   max-height: 360px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 /* Buttons */
@@ -121,28 +126,258 @@
   background-color: #00b753;
   color: #ffffff;
   border-radius: 5px;
-  gap: 10px;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: medium;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-style: none;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
 }
 
-.btn-success:hover {
+.btn-choose:hover {
   background-color: #157347;
   transform: scale(1.05);
 }
 
+/* ID styling */
+#chooseID {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 30px;
+}
+
 /* Responsive tweaks */
+
+/* Extra Small Devices (Phones < 576px) */
+@media (max-width: 575.98px) {
+  .choose-section {
+    padding: 30px 0;
+  }
+  
+  .choose-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .choose-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .choose-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .choose-card-body {
+    padding: 10px;
+    min-height: auto;
+  }
+  
+  .choose-card-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .choose-card-text,
+  .choose-second-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .choose-img-top {
+    max-height: 120px;
+  }
+  
+  .choose-img-side {
+    max-height: 200px;
+  }
+  
+  .btn-choose {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  /* For small screens, make all cards full width */
+  .col-lg-4,
+  .col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  /* Horizontal card becomes vertical on small screens */
+  .choose-card:nth-child(2) .row.g-0 {
+    flex-direction: column;
+  }
+  
+  .choose-card:nth-child(2) .col-md-7,
+  .choose-card:nth-child(2) .col-md-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  .choose-card:nth-child(2) .col-md-7 {
+    order: 1;
+  }
+  
+  .choose-card:nth-child(2) .col-md-5 {
+    order: 2;
+  }
+}
+
+/* Small Devices (Tablets ≥ 576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .choose-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .choose-card {
+    margin-bottom: 20px;
+  }
+  
+  .choose-img-top {
+    max-height: 140px;
+  }
+  
+  .choose-img-side {
+    max-height: 280px;
+  }
+  
+  .choose-card-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  .choose-card-text,
+  .choose-second-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/* Medium Devices (Tablets ≥ 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .choose-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .choose-card {
+    margin-bottom: 25px;
+  }
+  
+  .choose-img-top {
+    max-height: 150px;
+  }
+  
+  .choose-img-side {
+    max-height: 320px;
+  }
+  
+  .choose-card-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  .choose-card-text,
+  .choose-second-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/* Large Devices (Desktops ≥ 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .choose-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  
+  .choose-img-top {
+    max-height: 160px;
+  }
+  
+  .choose-img-side {
+    max-height: 360px;
+  }
+  
+  .choose-card-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  
+  .choose-card-text,
+  .choose-second-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+/* Extra Large Devices (Large Desktops ≥ 1200px) */
+@media (min-width: 1200px) {
+  .choose-title {
+    font-size: 47px;
+    line-height: 54px;
+  }
+  
+  .choose-img-top {
+    max-height: 160px;
+  }
+  
+  .choose-img-side {
+    max-height: 360px;
+  }
+  
+  .choose-card-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  
+  .choose-card-text,
+  .choose-second-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+/* Additional fixes for better responsiveness */
 @media (max-width: 768px) {
+  .choose-card {
+    height: auto;
+  }
+  
+  .choose-card-body {
+    flex: 1;
+  }
+  
   .choose-img-top,
   .choose-img-side {
-    max-width: 100px;
+    max-width: 100%;
+    height: auto;
   }
+}
+
+/* Ensure proper spacing on all devices */
+.row.g-4 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-lg-4,
+.col-lg-8,
+.col-md-6 {
+  padding-left: 15px;
+  padding-right: 15px;
 }

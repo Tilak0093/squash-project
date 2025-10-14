@@ -14,9 +14,9 @@ import propertycard8 from "../../assets/propertycard8.png";
 import propertycard9 from "../../assets/propertycard9.png";
 
 import Location from "../../assets/Location.png";
-import propertybath from "../../assets/propertybath.png";
+import propertybath from "../../assets/propertybath.svg";
 import propertybed from "../../assets/propertybed.png";
-import propertysqft from "../../assets/propertysqft.png";
+import propertysqft from "../../assets/propertysqft.svg";
 
 import Button1 from "../../assets/propertybutton1.png";
 import Button2 from "../../assets/propertybutton2.png";
@@ -101,12 +101,11 @@ const Property = () => {
             </div>
           </div>
 
- {/* Right: Filters */}
+          {/* Right: Filters */}
           <div className="col-12 col-md-6 d-flex flex-wrap justify-content-md-end align-items-center gap-3">
-            <span className="showing ">Showing 1–12 Results</span>
+            <span className="showing">Showing 1–12 Results</span>
 
             <div className="d-flex align-items-center gap-2">
-
               <select
                 className="forms-select form-select-sm perpage-select"
                 value={perPage}
@@ -119,7 +118,7 @@ const Property = () => {
             </div>
 
             <div className="d-flex align-items-center gap-2">
-              <label className=" mb-0">Sort By:</label>
+              <label className="mb-0">Sort By:</label>
               <select
                 className="forms-select form-select-sm sortby-select"
                 value={sortBy}
@@ -135,11 +134,9 @@ const Property = () => {
         </div>
       </section>
 
-
-
       {/* ---------- Property Cards ---------- */}
       <section className="container property-cards my-5">
-        <div className="row g-4">
+        <div className="row g-3">
           {cards.map((c) => (
             <div key={c.id} className="col-sm-12 col-md-6 col-lg-4">
               <div className="card property-card h-100">
@@ -163,15 +160,24 @@ const Property = () => {
                     <span className="loc-text">709 West Drive Chicago, IL 60606</span>
                   </p>
 
+                  {/* ---------- Feature Boxes ---------- */}
                   <div className="card-features d-flex gap-3 mt-2">
-                    <div className="feature-box">
-                      <img src={propertybed} alt="beds" />
+                    <div className="feature-box d-flex align-items-center gap-2 px-3 py-2">
+                      <img src={propertybed} alt="beds" className="feature-icon" />
+                      <span className="separator">|</span>
+                      <span className="feature-text">3 Beds</span>
                     </div>
-                    <div className="feature-box">
-                      <img src={propertybath} alt="baths" />
+
+                    <div className="feature-box d-flex align-items-center gap-2 px-3 py-2">
+                      <img src={propertybath} alt="baths" className="feature-icon" />
+                      <span className="separator">|</span>
+                      <span className="feature-text">2 Baths</span>
                     </div>
-                    <div className="feature-box">
-                      <img src={propertysqft} alt="sqft" />
+
+                    <div className="feature-box d-flex align-items-center gap-2 px-3 py-2">
+                      <img src={propertysqft} alt="sqft" className="feature-icon" />
+                      <span className="separator">|</span>
+                      <span className="feature-text">120sqft</span>
                     </div>
                   </div>
                 </div>

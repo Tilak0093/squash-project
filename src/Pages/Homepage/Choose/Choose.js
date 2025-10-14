@@ -12,13 +12,13 @@ const Choose = () => {
       <div className="container">
         {/* Heading */}
         <div className="text-center mb-5">
-          <p className="choose-subtitle d-flex justify-content-center" >| WHY CHOOSE US |</p>
+          <p className="choose-subtitle">| WHY CHOOSE US |</p>
           <h2 className="choose-title">
             Why Choose Our Properties <br /> Of Real Estate Industries
           </h2>
         </div>
 
-        <div className="row g-4" id="chooseID" >
+        <div className="row g-4" id="chooseID">
           {/* Card 1 */}
           <div className="col-lg-4 col-md-6">
             <div className="choose-card h-100 shadow-sm text-center">
@@ -32,9 +32,8 @@ const Choose = () => {
                   premium. At vero eos et accusamus et iusto odio dignissimos
                   ducimus qui blanditiis.
                 </p>
-                <div className="mt-auto stext-start">
-                 <button className="btn-choose">Read More</button>
-                 
+                <div className="mt-auto text-start">
+                  <button className="btn-choose">Read More</button>
                 </div>
               </div>
             </div>
@@ -49,11 +48,11 @@ const Choose = () => {
                 </div>
                 <div className="col-md-5 d-flex flex-column p-3">
                   <h5 className="choose-second-title">Property Insurance</h5>
-                 <p className=".choose-second-text">
+                  <p className="choose-second-text">
                     Distinctively re-engineer revolutionary meta-services and premium.
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
                   </p>
-                  <p className=".choose-second-text">
+                  <p className="choose-second-text">
                     Distinctively re-engineer revolutionary meta-services and premium.
                   </p>
                   <div className="mt-auto text-start">
@@ -91,7 +90,7 @@ const Choose = () => {
                 <img src={map} className="choose-img-top" alt="Prime Location" />
               </div>
               <div className="choose-card-body d-flex flex-column">
-                <h5 className=" choose-card-title">Prime Location</h5>
+                <h5 className="choose-card-title">Prime Location</h5>
                 <p className="choose-card-text">
                   Distinctively re-engineer revolutionary meta-services and
                   premium. At vero eos et accusamus et iusto odio dignissimos
@@ -106,7 +105,7 @@ const Choose = () => {
 
           {/* Card 5 */}
           <div className="col-lg-4 col-md-6">
-            <div className="choose-  card h-100 shadow-sm text-center">
+            <div className="choose-card h-100 shadow-sm text-center">
               <div className="p-3">
                 <img src={cash} className="choose-img-top" alt="Lowest Commission" />
               </div>

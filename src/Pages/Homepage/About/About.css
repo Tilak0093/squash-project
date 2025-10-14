@@ -1,6 +1,6 @@
 /* Title styling */
 .about-title {
-  font-size: 47px;         /* adjust size */
+  font-size: 42px !important;         /* adjust size */
   font-weight: 600;        /* bold */
   color: #000000;             /* dark color */
   margin-bottom: 1rem;
@@ -47,7 +47,7 @@
   font-size: 1rem;
   letter-spacing: 0%;
   margin-top: 25px;
-  margin-left: -40px;
+  margin-left: -20px;
 }
 
 
@@ -128,155 +128,122 @@
   border-color: #6E00FF !important;
 }
 
-/* ------------------ RIGHT COLUMN ------------------ */
-.about-images {
+
+
+/* ------------------ RIGHT IMAGE ------------------ */
+.about-right-img-wrapper {
   position: relative;
-  display: flex;
-}
-
-/* Main Image */
-.main-image {
-  position: relative;
-  flex: 2;
-}
-
-.aboutimage1 {
-  max-height: 100% !important;
-  max-width: 388.02px !important;
-  top: 1079px;
-  left: 975px;
-  object-fit: cover;
-  border-radius: 30px ; 
-  display: block;
-  position:absolute;
-  top: 90px;
-  left: 5px;
-}
-
-/* Sub Images stacked tightly */
-.sub-images {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  margin-top: 30px;
-  margin-right: -40px;
-}
-
-.sub-images img {
-  height: 277.01px;
-  width: 280.02px;
-  top: 1032.01px;
-  left: 1383.02px;
-  object-fit: cover;
-  display: block;
-  border-radius: 30px;
-}
-
-.abouthouse2{
-  max-width: 310px;
-  max-height: 300px;
-}
-
-
-.abouthouse3{
-  max-width: 310px;
-  max-height: 300px;
-}
-/* Round Badge Centered */
-.about-badge {
-  position: absolute;
-  top: 50%;
-  left: 95%;
-  transform: translate(-50%, -50%);
-  color: white;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(110, 0, 255, 0.4);
 }
 
-.about-badge .icon-img {
-  width: 220px;
-  margin-bottom: 50px;
+.about-right-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+}
+/* ------------------ RIGHT IMAGE ------------------ */
+.about-right-img-wrapper {
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
-/* Decorative Circles */
-.circle {
-  position: absolute;
+.about-right-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
   object-fit: contain;
+  /* Remove object-fit: cover to allow original sizing */
 }
 
-.circle1 {
-  top: 8%;
-  right: -100px;
-}
-
-.circle2 {
-  bottom: -50px;
-  left: 360px;
-}
-
-/* Custom container max-width override */
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1400px !important;
+/* For large screens, allow the image to display at its original size */
+@media (min-width: 1200px) {
+  .about-right-img {
+    max-width: none; /* Remove width constraint */
+    width: auto; /* Allow natural width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 30px;
+    object-fit: contain;
   }
 }
 
-
-/* Large Tablets (<= 991px) */
-@media (max-width: 991px) {
-  .about-badge {
-    left: 90%;  /* shift badge slightly left */
-    width: 100px;
-    height: 100px;
-    font-size: 11px;
+/* 🟡 Medium devices (tablets ≤992px) */
+@media (max-width: 992px) {
+  .about-title {
+    font-size: 2.2rem;
+    text-align: center;
   }
-}
 
-/* Tablets & Mobiles (<= 768px) */
-@media (max-width: 768px) {
-  .about-badge {
-    left: 80%;   /* move badge more inside */
-    width: 90px;
-    height: 90px;
-    font-size: 10px;
+  .about-subtitle,
+  .about-text-muted {
+    text-align: center;
   }
-}
 
-/* Small Mobiles (<= 576px) */
-@media (max-width: 576px) {
-  .about-badge {
-    top: 85%;    /* move lower */
-    left: 50%;   /* center horizontally */
-    transform: translate(-50%, -50%);
-    width: 75px;
-    height: 75px;
-    font-size: 9px;
-  }
-}
-
-@media (max-width: 320px) {
   .about-card {
-    width: 100%;  /* full width on very small screens */
-    height: 100%;
+    margin: 0 auto;
+    width: 95%;
   }
-  .about-card-description {
-    color: #6c757d;
-    font-size: 12px;
-    margin: 0;
-  }
-  .about-card-title-purple {
-    font-size: 17px;
-  }
-  .about-card-title-dark {
-    font-size: 17px;
+
+  .about-right-img {
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 30px;
   }
 }
 
+/* 🔵 Small tablets & large phones (≤768px) */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-right-img {
+    width: 85%;
+    border-radius: 30px;
+  }
+
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-card-icon {
+    margin: 0 0 10px 0;
+  }
+}
+
+/* 🔴 Small phones (≤576px) */
+@media (max-width: 576px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-right-img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .about-card-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* ⚫ Extra small (≤360px) */
+@media (max-width: 360px) {
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-card {
+    padding: 10px 15px;
+  }
+  .about-card{
+    min-height: 100%;
+    max-height: 100%;
+  }
+}
