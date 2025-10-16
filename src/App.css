@@ -38,8 +38,3 @@
 }
 
 /* Override Bootstrap container max-width */
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1400px !important;
-  }
-}

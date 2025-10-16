@@ -5,7 +5,6 @@
 }
 
 .team-subtitle {
-  height: 30px;
   font-family: 'Rubik', sans-serif;
   color: #6e00ff;
   font-weight: 500;
@@ -18,7 +17,6 @@
 }
 
 .team-title {
-  height: 54px;
   font-family: 'Rubik', sans-serif;
   font-style: semibold;
   font-size: 47px;
@@ -44,8 +42,6 @@
 }
 
 .team-card {
-  min-width: 328px;
-  min-height: 529px;
   text-align: center;
   margin: 0 auto;
   background-color: #f8f8f8;
@@ -53,7 +49,9 @@
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  position: relative;
+}
+.custom {
+  max-width: 75% !important;
 }
 
 /* Hover effect */
@@ -90,8 +88,6 @@
 }
 
 .card-name {
-  max-height: 34px;
-  max-width: 180px;
   font-family: 'Rubik', sans-serif;
   font-style: semibold;
   font-size: 24px;
@@ -100,24 +96,18 @@
   letter-spacing: 0%;
   margin: 10px 0 5px;
   color: #000000;
-  position: absolute;
-  bottom: 65px;
-  left: 20px;
+  text-align: start;
 }
 
 /* Role text at bottom-left */
 .card-role {
-  max-height: 28px;
-  max-width: 94px;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0%;
   color: #B35DD1;
-  position: absolute;
-  bottom: 35px;
-  left: 25px;
+  text-align: start;
   margin: 0;
 }
 
@@ -125,9 +115,7 @@
 .social-icons {
   display: flex;
   gap: 10px;
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
+
 }
 
 .social-icons img {
@@ -135,7 +123,6 @@
   height: 22px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  margin-top: -50px;
 }
 
 .social-icons img:hover {
@@ -181,6 +168,18 @@
   font-size: 18px;
 }
 
+.custom-bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-body {
+  display: flex;
+  gap: 7rem ;
+
+}
+
+
 /* Responsive Cards */
 @media (min-width: 768px) {
   .team-card {
@@ -191,7 +190,6 @@
 @media (min-width: 992px) {
   .team-card {
     flex: 0 0 25%; /* 4 cards visible */
-    max-width: 25%;
   }
 }
 
@@ -223,4 +221,24 @@
   .team-right-btn {
     right: 0;
   }
-}
+  @media (min-width: 320px) and (max-width : 480px) {
+    .custom-body {
+      display: flex;
+      flex-direction: column;
+      gap :30px ;
+    }
+    .team-nav-btn {
+        position: absolute;
+        top: 40%;
+
+    }
+    .team-left-btn {
+      left: -30px; 
+    }
+    .team-right-btn {
+      right: -30px; /* keep inside container */
+    }
+
+  }
+
+}	

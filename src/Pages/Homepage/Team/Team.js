@@ -33,7 +33,7 @@ const Team = () => {
       <p className="team-subtitle">| MEET OUR TEAM |</p>
       <h2 className="team-title mb-5">Our Exclusive Agents</h2>
 
-      <div className="container position-relative">
+      <div className="custom container position-relative">
         <Swiper
           modules={[Navigation]}
           loop={true}
@@ -49,7 +49,7 @@ const Team = () => {
         >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="card team-card h-100">
+              <div className="card team-card ">
                 <img
                   src={member.img}
                   className="card-img-top img-fluid"
@@ -57,11 +57,13 @@ const Team = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-name">{member.name}</h5>
+                  <div className="custom-body">
                   <p className="card-role">{member.role}</p>
-                  <div className="social-icons d-flex justify-content-end">
+                  <div className="social-icons">
                     <img src={instateam} alt="Instagram" />
                     <img src={twitterteam} alt="Twitter" />
                     <img src={facebookteam} alt="Facebook" />
+                  </div>
                   </div>
                 </div>
               </div>
