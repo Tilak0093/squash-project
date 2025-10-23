@@ -183,7 +183,6 @@
   border: none !important; /* remove border */
   border-bottom: 1px solid #ccc; /* subtle underline */
   color: #474747; /* text color visible */
-  font-size: 14px;
   border-radius: 0; /* remove rounded corners */
   appearance: none; /* remove default browser arrow */
   -webkit-appearance: none;
@@ -252,25 +251,45 @@
   background: #fff; /* white background */
 }
 
-/* Responsive Fix */
-@media (max-width: 768px) {
-  .bottom-wrapper {
-    width: 95%;
-    padding: 10px;
-  }
-  .toggle-buttons {
-    margin-bottom: 10px;
-  }
-}
 
-/* Hide dividers on small screens */
+/* Hide dividers on small screens */   
+
+@media (max-width: 1024px) {
+  
+ }
+
+
+
+
+
+
 @media (max-width: 768px) {
+    .bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -9rem;
+  }
+  .hero-title{
+    margin-top: 30px !important;
+      }
+    .hero-subtitle{
+    font-size: 14px !important;
+    }
+   
   .border-col {
     border-right: none;
     border-bottom: 1px solid #eee; /* optional: horizontal line for stacked layout */
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
+  .toggle-buttons {
+    margin-bottom: 10px;
+  }
+  .bottom-bar .form-select {
+    font-size: 15px;
+  }
+
 }
 
 

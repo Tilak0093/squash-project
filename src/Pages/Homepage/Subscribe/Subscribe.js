@@ -12,7 +12,7 @@
               <h4 className="subscribe-title">
                 Subscribe to get the latest <br /> news for you!
               </h4>
-              <form className="subscribe-form mt-3">
+              <div className="subscribe-form mt-3">
                 <input
                   type="email"
                   className="subscribe-input"
@@ -21,7 +21,7 @@
                 <button type="submit" className="subscribe-btn">
                   Subscribe
                 </button>
-              </form>
+              </div>
             </div>
 
             {/* Right Side */}

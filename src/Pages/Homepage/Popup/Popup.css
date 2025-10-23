@@ -107,10 +107,7 @@
   border-radius: 10px;
   padding: 14px 20px;
   border: none;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  font-size: 1rem;
-  min-width: 357px;
-  min-height: 50px;
+  font-size: 1rem;  
 }
 .subscribes-btn {
   background: var(--green);

@@ -162,19 +162,19 @@ const Property = () => {
 
                   {/* ---------- Feature Boxes ---------- */}
                   <div className="card-features d-flex gap-3 mt-2">
-                    <div className="feature-box d-flex align-items-center gap-2 px-3 py-2">
+                    <div className="feature-box d-flex align-items-center gap-2 ">
                       <img src={propertybed} alt="beds" className="feature-icon" />
                       <span className="separator">|</span>
                       <span className="feature-text">3 Beds</span>
                     </div>
 
-                    <div className="feature-box d-flex align-items-center gap-2 px-3 py-2">
+                    <div className="feature-box d-flex align-items-center ">
                       <img src={propertybath} alt="baths" className="feature-icon" />
                       <span className="separator">|</span>
                       <span className="feature-text">2 Baths</span>
                     </div>
 
-                    <div className="feature-box d-flex align-items-center gap-2 px-3 py-2">
+                    <div className="feature-box d-flex align-items-center gap-2 ">
                       <img src={propertysqft} alt="sqft" className="feature-icon" />
                       <span className="separator">|</span>
                       <span className="feature-text">120sqft</span>

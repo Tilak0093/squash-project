@@ -200,10 +200,14 @@
     height: 40px;
   }
   .team-left-btn {
-    left: 5px;
+    left: -3rem;
   }
   .team-right-btn {
-    right: 5px;
+    right: -3rem;
+  }
+  .custom-body {
+    gap:3rem ;
+
   }
 }
 
@@ -216,11 +220,18 @@
     border: 2px solid #474747;
   }
   .team-left-btn {
-    left: 0;
+    left: -3rem;
   }
   .team-right-btn {
-    right: 0;
+    right: -3rem;
   }
+  .custom-body {
+    gap:2rem ;
+
+  }
+}
+
+
   @media (min-width: 320px) and (max-width : 480px) {
     .custom-body {
       display: flex;
@@ -241,4 +252,4 @@
 
   }
 
-}	
+	
