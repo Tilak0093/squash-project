@@ -265,10 +265,10 @@ export default function PropertyDetail() {
                     {/* ---------- Comment 1 ---------- */}
                     <div className="comment-item mb-4 p-3 border rounded">
                       <div className="row g-3 align-items-start">
-                        <div className="col-md-2 col-3 text-center">
+                        <div className="col-md-2  text-center">
                           <img src={profile1} alt="user" className="avatar img-fluid rounded-circle" />
                         </div>
-                        <div className="col-md-10 col-9">
+                        <div className="col-md-10 ">
                           <strong>Dianne Russell</strong>
                           <div className="comment-meta text-muted small mb-2">
                             March 10, 2023 | 10:30 am
@@ -302,10 +302,10 @@ export default function PropertyDetail() {
                     {/* ---------- Comment 2 ---------- */}
                     <div className="comment-item mb-4 p-3 border rounded">
                       <div className="row g-3 align-items-start">
-                        <div className="col-md-2 col-3 text-center">
+                        <div className="col-md-2  text-center">
                           <img src={profile2} alt="user2" className="avatar img-fluid rounded-circle" />
                         </div>
-                        <div className="col-md-10 col-9">
+                        <div className="col-md-10 ">
                           <strong>Arlene McCoy</strong>
                           <div className="comment-meta text-muted small mb-2">
                             March 10, 2023 | 11:30 am
@@ -334,10 +334,10 @@ export default function PropertyDetail() {
                     {/* ---------- Comment 3 ---------- */}
                     <div className="comment-item mb-4 p-3 border rounded">
                       <div className="row g-3 align-items-start">
-                        <div className="col-md-2 col-3 text-center">
+                        <div className="col-md-2  text-center">
                           <img src={profile3} alt="user3" className="avatar img-fluid rounded-circle" />
                         </div>
-                        <div className="col-md-10 col-9">
+                        <div className="col-md-10  ">
                           <strong>Annette Black</strong>
                           <div className="comment-meta text-muted small mb-2">
                             March 10, 2023 | 11:30 am

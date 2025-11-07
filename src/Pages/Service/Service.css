@@ -314,6 +314,16 @@
 }
 
 /* ---------- Responsive tweaks ---------- */
+
+@media (max-width: 1200px) {
+  .service-title {
+    margin-left: -50px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: none;
+  }
+
+}
 @media (max-width: 991px) {
   .service-card {
     height: auto;
@@ -329,6 +339,21 @@
   .play-inner {
     width: 52px;
     height: 52px;
+  }
+}
+
+@media (max-width:768px) {
+  .service-title {
+    margin-left: -15px;
+    font-size: 21px;
+  }
+  .service-desc {
+    font-size: 14px;
+    line-height: none;
+  }
+  .service-num {
+    width: 30%;
+    height: 30%;
   }
 }
 

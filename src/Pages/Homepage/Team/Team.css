@@ -13,7 +13,7 @@
   line-height: 30px;
   letter-spacing: 0%;
   display: block;
-  margin-top: 9rem;
+  margin-top: 5rem;
 }
 
 .team-title {
@@ -157,11 +157,11 @@
 }
 
 .team-left-btn {
-  left: -9rem;  /* keep inside container */
+  left: -80px;
 }
 
 .team-right-btn {
-  right: -9rem; /* keep inside container */
+  right: -80px;
 }
 
 .team-nav-btn i {
@@ -175,8 +175,10 @@
 
 .custom-body {
   display: flex;
-  gap: 7rem ;
-
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
 }
 
 
@@ -186,6 +188,8 @@
     flex: 0 0 50%; /* 2 cards visible */
   }
 }
+
+
 
 @media (min-width: 992px) {
   .team-card {
@@ -200,14 +204,17 @@
     height: 40px;
   }
   .team-left-btn {
-    left: -3rem;
+    left: -60px;
   }
   .team-right-btn {
-    right: -3rem;
+    right: -60px;
   }
   .custom-body {
-    gap:3rem ;
-
+    justify-content: space-between;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    padding: none;
   }
 }
 
@@ -220,36 +227,33 @@
     border: 2px solid #474747;
   }
   .team-left-btn {
-    left: -3rem;
+    left: -50px;
   }
   .team-right-btn {
-    right: -3rem;
+    right: -50px;
   }
   .custom-body {
-    gap:2rem ;
-
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
   }
 }
 
 
   @media (min-width: 320px) and (max-width : 480px) {
     .custom-body {
-      display: flex;
       flex-direction: column;
-      gap :30px ;
+      gap: 10px;
+      align-items: flex-start;
     }
     .team-nav-btn {
         position: absolute;
         top: 40%;
-
     }
     .team-left-btn {
-      left: -30px; 
+      left: -40px; 
     }
     .team-right-btn {
-      right: -30px; /* keep inside container */
+      right: -40px;
     }
-
   }
-
-	

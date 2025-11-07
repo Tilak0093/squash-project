@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+  import React, { useState } from "react";
 import "./BlogDetail.css";
 
 // breadcrumb images
@@ -247,7 +247,7 @@ function BlogDetail() {
 
             <div className="latest-blog-card">
               <h4>Our Latest Blog</h4>
-              <div className="latest-item">
+              <div className="latest-blog-item">
                 <img src={blog1} alt="latest" />
                 <div className="latest-meta">
                   <small>24-12-2020 /  <span className="author">by Esther Miles</span></small>

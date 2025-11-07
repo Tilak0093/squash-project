@@ -1,8 +1,14 @@
+body {
+  overflow-x: hidden; /* Prevents horizontal scroll on entire page */
+}
+
+
 /* Wrapper */
 .subscribe-wrapper {
   justify-content: center;
   margin-top: 14rem !important;
   margin-bottom: 10rem;
+  padding: 0 15px; /* ADD THIS - prevents edge overflow */
 }
 
 /* Card */
@@ -13,6 +19,7 @@
   min-height: 325px !important;
   position: relative;
   overflow: visible;
+  max-width: 100%; /* ADD THIS */
 }
 
 /* Title */
@@ -58,7 +65,6 @@
   background: #fff;
 }
 
-
 /* Subscribe Button (separate) */
 .subscribe-btn {
   background-color: #00b753;
@@ -67,7 +73,7 @@
   padding: 10px 20px 10px 20px;
   gap: 10px;
   border: none;
-  border-radius: 5px; /* fully rounded */
+  border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -81,23 +87,57 @@
 .subscribe-img-wrapper {
   position: relative;
   overflow: visible;
+  max-width: 100%; /* ADD THIS */
 }
 
 .subscribe-img {
   position: absolute;
-  bottom: -195px; /* pops out of purple card */
-  right: 30;
+  bottom: -195px;
+  right: 0; /* CHANGED from 30 */
   filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
+  max-width: 500px; /* ADD THIS - controls max size */
+  width: 100%; /* ADD THIS */
+  height: auto; /* ADD THIS */
 }
 
 /* Responsive */
 
+/* Tablet and small desktop - prevents scrollbar */
+@media (max-width: 1245px) {
+  .subscribe-img {
+    max-width: 400px;
+  }
+  .subscribe-img {
+    bottom: -165px;
+  }
+}
+
+@media (max-width: 992px) {
+  .subscribe-img {
+    max-width: 350px;
+  }
+  
+  .subscribe-title {
+    font-size: 36px;
+    line-height: 42px;
+    left: 50px;
+  }
+}
 
 @media (max-width: 768px) {
   .subscribe-card {
     min-width: 100% !important;
     text-align: center;
     padding: 20px;
+  }
+  
+  .subscribe-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 20px;
   }
 
   .subscribe-form {
@@ -119,11 +159,11 @@
     bottom: 0;
     right: 0;
     margin-top: 15px;
-    max-height: 180px;
+    max-width: 280px;
+    max-height: none; /* CHANGED - let width control size */
     filter: none;
   }
 }
-
 
 @media (min-width:320px) and (max-width: 425px) {
   .subscribe-card {
@@ -136,7 +176,7 @@
     font-size: 28px;
     line-height: 34px;
     position: relative;
-    top: 20px;
+    top: 0;
     left: 0;
     margin-bottom: 40px;
   }
@@ -152,5 +192,9 @@
     position: relative;
     bottom: 0;
     left: 0;
+  }
+  
+  .subscribe-img {
+    max-width: 250px;
   }
 }

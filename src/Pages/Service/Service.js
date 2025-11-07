@@ -183,9 +183,9 @@ const Service = () => {
       </section>
 
       {/* ---------- Team Section ---------- */}
-      <section className="team-section py-5">
+      <section className="team-section ">
         <div className="container text-center">
-          <div className="row justify-content-center mt-5">
+          <div className="row justify-content-center ">
             <Team />
           </div>
         </div>

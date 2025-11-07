@@ -180,6 +180,42 @@
 }
 
 
+
+/* ---------- Responsive ---------- */
+
+
+@media (max-width:1200px) {
+  .servicedetail-title {
+    margin-left: -50px !important;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    line-height: none;
+  }
+  .servicedetail-num {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (max-width:768px) {
+  .servicedetail-title {
+    margin-left: -25px !important;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    line-height: none;
+    font-size: 20px ;
+  }
+  .servicedetail-num {
+    width: 30%;
+    height: 30%;
+  }
+
+  .servicedetail-desc{
+    font-size: 14px;
+  }
+}
+
+
 @media (max-width:320px) {
   .servicedetail-title {
     margin-left: -60px !important;

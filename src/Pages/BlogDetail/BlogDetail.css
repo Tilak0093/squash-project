@@ -68,7 +68,6 @@
   font-style: semi-bold;
   line-height: 50px;
   letter-spacing: 0%;
-  numeric-spacing: proportional;
   margin-top: 6px;
   margin-bottom: 20px;
   color: #141414;
@@ -546,8 +545,6 @@
   border-radius: 8px;
   padding: 20px;
   font-family: 'Rubik', sans-serif;
-  max-width: 447px;
-  max-height: 642px;
 }
 
 /* Title */
@@ -563,7 +560,7 @@
 }
 
 /* Blog Item */
-.latest-item img {
+.latest-blog-item img {
   width: 387px;
   height: 300px;
   border-radius: 6px;
@@ -657,8 +654,6 @@
   padding: 30px;
   font-family: sans-serif;
   margin-top: 60px;
-  width: 447px;
-  height: 394px;
 }
 
 /* headings */
@@ -717,7 +712,7 @@
 
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .blog-grid {
     grid-template-columns: 1fr 320px;
   }
@@ -734,7 +729,7 @@
   .property-hero { height: 200px; }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px)  and (max-width: 767px) {
   .main-img {
     width :100%;
     height: 100%;

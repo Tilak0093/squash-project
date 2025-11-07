@@ -526,12 +526,6 @@ body {
   color: #000;
 }
 
-.comments-box {
-  border: 1px solid #bbbbbb;
-  border-radius: 10px;
-  max-width: 923px;
-  max-height: 892px;
-}
 
 
 .comment-item {
@@ -744,6 +738,11 @@ body {
   margin: 6px 0;
   text-decoration: none;
   text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
 }
 
 .contact-box {
@@ -927,16 +926,17 @@ body {
 
   .floorplan-card {
     width: 100%;
-    height: auto;
+    height: 485px;
   }
 }
 
-@media (max-width:320px) {
+@media (min-width:320px) and (max-width:480px) {
   .agent{
     display: block;
   }
   .latest-blog-card {
     max-height: none !important;
+    margin-bottom: 30px;
   }
   .nearby-grid {
     display: block;
@@ -953,4 +953,17 @@ body {
     display: block;
     gap:10px;
   }
+  .agent-contact a {
+    font-size: 11px;
+  }
+  .agent-infos {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .avatar {
+    width: auto;
+    height: auto;
+  }
+
 }
