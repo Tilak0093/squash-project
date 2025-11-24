@@ -26,7 +26,7 @@
 
             {/* Right Side */}
             <div className="col-md-5 subscribe-img-wrapper">
-              <img
+              <img   
                 src={subscribeImg}
                 alt="Subscribe"
                 className="subscribe-img"
