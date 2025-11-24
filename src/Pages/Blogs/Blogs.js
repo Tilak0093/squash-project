@@ -111,8 +111,14 @@ const Blogs = () => {
           <div className="container text-center hero-inner">
             <h1 className="property-hero-title">Blog</h1>
             <div className="hero-breadcrumb">
-              <a href="/" className="breadcrumb-home">Home</a>
-              <img src={Diamond} alt="separator" className="breadcrumb-separator" />
+              <a href="/" className="breadcrumb-home">
+                Home
+              </a>
+              <img
+                src={Diamond}
+                alt="separator"
+                className="breadcrumb-separator"
+              />
               <span className="breadcrumb-current">Blog</span>
             </div>
           </div>
@@ -159,29 +165,67 @@ const Blogs = () => {
               <nav aria-label="Page navigation example">
                 <ul className="pagination custom-pagination">
                   <li className="page-item">
-                    <a className="page-link" href="#" aria-label="Previous">
+                    <button
+                      className="page-link"
+                      type="button"
+                      aria-label="Previous page"
+                    >
                       <span aria-hidden="true">‹</span>
-                    </a>
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link active" href="#">1</a>
+                    <button
+                      className="page-link active"
+                      type="button"
+                      aria-label="Go to page 1"
+                    >
+                      1
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">2</a>
+                    <button
+                      className="page-link"
+                      type="button"
+                      aria-label="Go to page 2"
+                    >
+                      2
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">3</a>
+                    <button
+                      className="page-link"
+                      type="button"
+                      aria-label="Go to page 3"
+                    >
+                      3
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">...</a>
+                    <button
+                      className="page-link"
+                      type="button"
+                      aria-disabled="true"
+                    >
+                      ...
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">12</a>
+                    <button
+                      className="page-link"
+                      type="button"
+                      aria-label="Go to page 12"
+                    >
+                      12
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#" aria-label="Next">
+                    <button
+                      className="page-link"
+                      type="button"
+                      aria-label="Next page"
+                    >
                       <span aria-hidden="true">›</span>
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </nav>
