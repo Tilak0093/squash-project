@@ -51,8 +51,14 @@ const Property = () => {
           <div className="container">
             <h1 className="property-hero-title mb-3">Property</h1>
             <div className="hero-breadcrumb d-flex justify-content-center align-items-center gap-2">
-              <a href="/" className="breadcrumb-home">Home</a>
-              <img src={Diamond} alt="diamond" className="breadcrumb-separator" />
+              <a href="/" className="breadcrumb-home">
+                Home
+              </a>
+              <img
+                src={Diamond}
+                alt="diamond"
+                className="breadcrumb-separator"
+              />
               <span className="breadcrumb-current">Property</span>
             </div>
           </div>
@@ -68,33 +74,57 @@ const Property = () => {
               <span className="view-label me-2 fw-semibold">View As:</span>
 
               <button
-                className={`view-btn btn ${viewMode === "grid-4" ? "active" : ""}`}
+                className={`view-btn btn ${
+                  viewMode === "grid-4" ? "active" : ""
+                }`}
                 onClick={() => setViewMode("grid-4")}
                 title="4-column grid"
+                type="button"
               >
-                <img src={Button1} alt="4-column grid" className="view-icon" />
+                <img
+                  src={Button1}
+                  alt="4-column grid"
+                  className="view-icon"
+                />
               </button>
 
               <button
-                className={`view-btn btn ${viewMode === "grid-3" ? "active" : ""}`}
+                className={`view-btn btn ${
+                  viewMode === "grid-3" ? "active" : ""
+                }`}
                 onClick={() => setViewMode("grid-3")}
                 title="3-column grid"
+                type="button"
               >
-                <img src={Button2} alt="3-column grid" className="view-icon" />
+                <img
+                  src={Button2}
+                  alt="3-column grid"
+                  className="view-icon"
+                />
               </button>
 
               <button
-                className={`view-btn btn ${viewMode === "grid-2" ? "active" : ""}`}
+                className={`view-btn btn ${
+                  viewMode === "grid-2" ? "active" : ""
+                }`}
                 onClick={() => setViewMode("grid-2")}
                 title="2-column grid"
+                type="button"
               >
-                <img src={Button3} alt="2-column grid" className="view-icon" />
+                <img
+                  src={Button3}
+                  alt="2-column grid"
+                  className="view-icon"
+                />
               </button>
 
               <button
-                className={`view-btn btn ${viewMode === "list" ? "active" : ""}`}
+                className={`view-btn btn ${
+                  viewMode === "list" ? "active" : ""
+                }`}
                 onClick={() => setViewMode("list")}
                 title="list view"
+                type="button"
               >
                 <img src={Button4} alt="list view" className="view-icon" />
               </button>
@@ -153,29 +183,45 @@ const Property = () => {
                     <div className="sale-badge">For Sale</div>
                   </div>
 
-                  <h5 className="property-card-title">Comfortable Apartment</h5>
+                  <h5 className="property-card-title">
+                    Comfortable Apartment
+                  </h5>
 
                   <p className="card-location d-flex align-items-center gap-2">
                     <img src={Location} alt="loc" className="loc-icon" />
-                    <span className="loc-text">709 West Drive Chicago, IL 60606</span>
+                    <span className="loc-text">
+                      709 West Drive Chicago, IL 60606
+                    </span>
                   </p>
 
                   {/* ---------- Feature Boxes ---------- */}
                   <div className="card-features d-flex gap-3 mt-2">
                     <div className="feature-box d-flex align-items-center gap-2 ">
-                      <img src={propertybed} alt="beds" className="feature-icon" />
+                      <img
+                        src={propertybed}
+                        alt="beds"
+                        className="feature-icon"
+                      />
                       <span className="separator">|</span>
                       <span className="feature-text">3 Beds</span>
                     </div>
 
                     <div className="feature-box d-flex align-items-center ">
-                      <img src={propertybath} alt="baths" className="feature-icon" />
+                      <img
+                        src={propertybath}
+                        alt="baths"
+                        className="feature-icon"
+                      />
                       <span className="separator">|</span>
                       <span className="feature-text">2 Baths</span>
                     </div>
 
                     <div className="feature-box d-flex align-items-center gap-2 ">
-                      <img src={propertysqft} alt="sqft" className="feature-icon" />
+                      <img
+                        src={propertysqft}
+                        alt="sqft"
+                        className="feature-icon"
+                      />
                       <span className="separator">|</span>
                       <span className="feature-text">120sqft</span>
                     </div>
@@ -192,29 +238,67 @@ const Property = () => {
             <nav aria-label="Page navigation example">
               <ul className="pagination custom-pagination mb-0">
                 <li className="page-item">
-                  <a className="page-link" href="#" aria-label="Previous">
+                  <button
+                    className="page-link"
+                    type="button"
+                    aria-label="Previous page"
+                  >
                     <span aria-hidden="true">‹</span>
-                  </a>
+                  </button>
                 </li>
                 <li className="page-item">
-                  <a className="page-link active" href="#">1</a>
+                  <button
+                    className="page-link active"
+                    type="button"
+                    aria-label="Go to page 1"
+                  >
+                    1
+                  </button>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#">2</a>
+                  <button
+                    className="page-link"
+                    type="button"
+                    aria-label="Go to page 2"
+                  >
+                    2
+                  </button>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#">3</a>
+                  <button
+                    className="page-link"
+                    type="button"
+                    aria-label="Go to page 3"
+                  >
+                    3
+                  </button>
                 </li>
                 <li className="page-item disabled">
-                  <a className="page-link" href="#">...</a>
+                  <button
+                    className="page-link"
+                    type="button"
+                    aria-disabled="true"
+                  >
+                    ...
+                  </button>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#">12</a>
+                  <button
+                    className="page-link"
+                    type="button"
+                    aria-label="Go to page 12"
+                  >
+                    12
+                  </button>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#" aria-label="Next">
+                  <button
+                    className="page-link"
+                    type="button"
+                    aria-label="Next page"
+                  >
                     <span aria-hidden="true">›</span>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </nav>

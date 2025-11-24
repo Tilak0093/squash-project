@@ -20,10 +20,38 @@ const Footer = () => {
                 aut fugit sed consequuntur magni dolores eos qui ratione.
               </p>
               <div className="footer-icons">
-                <a href="#"><img src={facebook} alt="Facebook" /></a>
-                <a href="#"><img src={twitter} alt="Twitter" /></a>
-                <a href="#"><img src={insta} alt="Instagram" /></a>
-                <a href="#"><img src={linked} alt="LinkedIn" /></a>
+                <button
+                  className="icon-btn"
+                  aria-label="Visit Facebook"
+                  type="button"
+                  onClick={() => window.open("https://facebook.com", "_blank")}
+                >
+                  <img src={facebook} alt="Facebook" />
+                </button>
+                <button
+                  className="icon-btn"
+                  aria-label="Visit Twitter"
+                  type="button"
+                  onClick={() => window.open("https://twitter.com", "_blank")}
+                >
+                  <img src={twitter} alt="Twitter" />
+                </button>
+                <button
+                  className="icon-btn"
+                  aria-label="Visit Instagram"
+                  type="button"
+                  onClick={() => window.open("https://instagram.com", "_blank")}
+                >
+                  <img src={insta} alt="Instagram" />
+                </button>
+                <button
+                  className="icon-btn"
+                  aria-label="Visit LinkedIn"
+                  type="button"
+                  onClick={() => window.open("https://linkedin.com", "_blank")}
+                >
+                  <img src={linked} alt="LinkedIn" />
+                </button>
               </div>
             </div>
 
@@ -39,10 +67,10 @@ const Footer = () => {
             <div className="col-sm-12 col-md-4 col-lg-2">
               <h4>Page</h4>
               <ul className="footer-list">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Property</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Service</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/property">Property</a></li>
+                <li><a href="/blogs">Blogs</a></li>
+                <li><a href="/service">Service</a></li>
               </ul>
             </div>
 
@@ -50,10 +78,18 @@ const Footer = () => {
             <div className="col-sm-12 col-md-4 col-lg-2">
               <h4>Quick Links</h4>
               <ul className="footer-list">
-                <li><a href="/error">Terms and Conditions</a></li>
-                <li><a href="/coming-soon">Privacy Policy</a></li>
+                <li><a href="/terms">Terms and Conditions</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
                 <li><a href="/faq">FAQs</a></li>
-                <li><a href="#">Support Center</a></li>
+                <li>
+                  <button
+                    className="link-btn"
+                    type="button"
+                    onClick={() => alert("Support coming soon!")}
+                  >
+                    Support Center
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -65,8 +101,11 @@ const Footer = () => {
                   type="email"
                   className="form-control"
                   placeholder="Get product updates"
+                  aria-label="Email address"
                 />
-                <button className="btn">➜</button>
+                <button className="btn" type="submit" aria-label="Subscribe">
+                  ➜
+                </button>
               </div>
             </div>
           </div>
