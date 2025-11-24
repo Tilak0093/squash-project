@@ -59,7 +59,7 @@ const AboutUs = () => {
             <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
               <img
                 src={Home1}
-                alt="About - image"
+                alt="About"
                 className="img-fluid rounded about-intro-image"
               />
             </div>
